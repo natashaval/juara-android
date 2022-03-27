@@ -14,6 +14,10 @@ class MainActivity : AppCompatActivity() {
     birthdayButton.setOnClickListener {
       startActivity(Intent(this, BirthdayActivity::class.java))
     }
-
+    
+    val diceButton = findViewById<Button>(R.id.bt_dice)
+    diceButton.setOnClickListener {
+      startActivity(Intent(this, DiceActivity::class.java))
+    }
   }
 }

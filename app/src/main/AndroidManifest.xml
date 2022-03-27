@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HappyBirthday">
         <activity
+            android:name=".DiceActivity"
+            android:exported="false" />
+        <activity
             android:name=".BirthdayActivity"
             android:exported="false" />
         <activity
