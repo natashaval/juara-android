@@ -19,5 +19,10 @@ class MainActivity : AppCompatActivity() {
     diceButton.setOnClickListener {
       startActivity(Intent(this, DiceActivity::class.java))
     }
+
+    val lemonadeButton = findViewById<Button>(R.id.bt_lemonade)
+    lemonadeButton.setOnClickListener {
+      startActivity(Intent(this, LemonadeActivity::class.java))
+    }
   }
 }

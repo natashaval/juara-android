@@ -26,4 +26,16 @@
         app:layout_constraintStart_toStartOf="@id/bt_birthday"
         app:layout_constraintTop_toBottomOf="@id/bt_birthday" />
 
+    <Button
+        android:id="@+id/bt_lemonade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Lemonade!"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/yellow_dark"
+        app:layout_constraintEnd_toEndOf="@id/bt_birthday"
+        app:layout_constraintStart_toStartOf="@id/bt_birthday"
+        app:layout_constraintTop_toBottomOf="@id/bt_dice" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
