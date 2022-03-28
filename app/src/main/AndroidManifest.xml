@@ -10,9 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HappyBirthday">
         <activity
-            android:name=".LemonadeActivity"
-            android:theme="@style/Theme.Lemonade"
+            android:name=".TipActivity"
             android:exported="false" />
+        <activity
+            android:name=".LemonadeActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Lemonade" />
         <activity
             android:name=".DebugActivity"
             android:exported="false" />
