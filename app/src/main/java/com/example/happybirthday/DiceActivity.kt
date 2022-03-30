@@ -10,6 +10,7 @@ import android.widget.TextView
  * This activity allows the user to roll a dice and view the result
  * on the screen.
  */
+// https://developer.android.com/courses/pathways/android-basics-kotlin-four
 class DiceActivity : AppCompatActivity() {
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
