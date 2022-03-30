@@ -1,7 +1,11 @@
 package com.example.happybirthday
 
+import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.KeyEvent
+import android.view.View
+import android.view.inputmethod.InputMethodManager
 import com.example.happybirthday.databinding.ActivityTipBinding
 import java.text.NumberFormat
 import kotlin.math.ceil
@@ -20,6 +24,8 @@ class TipActivity : AppCompatActivity() {
   // The binding object automatically defines references for every View in your app that has an ID.
   //  Using view binding is so much more concise that often you won't even need to create a variable to hold the reference for a View, just use it directly from the binding object.
     binding.calculateButton.setOnClickListener { calculateTip() }
+
+    binding.costOfServiceEditText.setOnKeyListener { view, keyCode, _ -> handleKeyEvent(view, keyCode) }
   }
 
   private fun calculateTip() {
@@ -44,5 +50,16 @@ class TipActivity : AppCompatActivity() {
   private fun displayTip(tip: Double) {
     val formattedTip = NumberFormat.getCurrencyInstance().format(tip)
     binding.tipResult.text = getString(R.string.tip_amount, formattedTip)
+  }
+
+  private fun handleKeyEvent(view: View, keyCode: Int): Boolean {
+    if (keyCode == KeyEvent.KEYCODE_ENTER) {
+      // Hide the keyboard
+      val inputMethodManager =
+        getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+      inputMethodManager.hideSoftInputFromWindow(view.windowToken, 0)
+      return true
+    }
+    return false
   }
 }

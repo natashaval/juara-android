@@ -11,7 +11,8 @@
         android:theme="@style/Theme.HappyBirthday">
         <activity
             android:name=".TipActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.TipTime" />
         <activity
             android:name=".LemonadeActivity"
             android:exported="false"
