@@ -4,7 +4,9 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import com.example.happybirthday.affirmation.view.AffirmationActivity
 import com.example.happybirthday.databinding.ActivityMainBinding
+import kotlin.reflect.KClass
 
 class MainActivity : AppCompatActivity() {
   private lateinit var binding: ActivityMainBinding
@@ -30,6 +32,14 @@ class MainActivity : AppCompatActivity() {
 
     binding.btTip.setOnClickListener {
       startActivity(Intent(this, TipActivity::class.java))
+    }
+
+    openActivity(binding.btAffirmations, AffirmationActivity::class)
+  }
+
+  private fun <T: Any> openActivity(button: Button, clazz: KClass<T>) {
+    button.setOnClickListener {
+      startActivity(Intent(this, clazz::class.java))
     }
   }
 }

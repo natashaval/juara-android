@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HappyBirthday">
         <activity
+            android:name=".affirmation.view.AffirmationActivity"
+            android:exported="false" />
+        <activity
             android:name=".TipActivity"
             android:exported="false"
             android:theme="@style/Theme.TipTime" />
