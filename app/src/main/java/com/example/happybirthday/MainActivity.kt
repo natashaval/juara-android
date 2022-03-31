@@ -34,12 +34,8 @@ class MainActivity : AppCompatActivity() {
       startActivity(Intent(this, TipActivity::class.java))
     }
 
-    openActivity(binding.btAffirmations, AffirmationActivity::class)
-  }
-
-  private fun <T: Any> openActivity(button: Button, clazz: KClass<T>) {
-    button.setOnClickListener {
-      startActivity(Intent(this, clazz::class.java))
+    binding.btAffirmations.setOnClickListener {
+      startActivity(Intent(this, AffirmationActivity::class.java))
     }
   }
 }

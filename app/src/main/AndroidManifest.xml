@@ -11,7 +11,8 @@
         android:theme="@style/Theme.HappyBirthday">
         <activity
             android:name=".affirmation.view.AffirmationActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.Affirmations" />
         <activity
             android:name=".TipActivity"
             android:exported="false"
