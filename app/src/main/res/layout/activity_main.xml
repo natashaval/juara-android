@@ -71,5 +71,16 @@
         app:layout_constraintStart_toStartOf="@id/bt_birthday"
         app:layout_constraintTop_toBottomOf="@id/bt_affirmations" />
 
+    <Button
+        android:id="@+id/bt_words"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Words!"
+        android:backgroundTint="@color/teal_900"
+        app:layout_constraintEnd_toEndOf="@id/bt_birthday"
+        app:layout_constraintStart_toStartOf="@id/bt_birthday"
+        app:layout_constraintTop_toBottomOf="@id/bt_dogglers" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
