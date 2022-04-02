@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Button
 import com.example.happybirthday.affirmation.view.AffirmationActivity
 import com.example.happybirthday.databinding.ActivityMainBinding
+import com.example.happybirthday.dogglers.view.DogglersActivity
 import kotlin.reflect.KClass
 
 class MainActivity : AppCompatActivity() {
@@ -36,6 +37,10 @@ class MainActivity : AppCompatActivity() {
 
     binding.btAffirmations.setOnClickListener {
       startActivity(Intent(this, AffirmationActivity::class.java))
+    }
+
+    binding.btDogglers.setOnClickListener {
+      startActivity(Intent(this, DogglersActivity::class.java))
     }
   }
 }
