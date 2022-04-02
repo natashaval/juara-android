@@ -10,6 +10,14 @@ import com.example.happybirthday.words.adapter.WordAdapter
 
 class DetailActivity : AppCompatActivity() {
 
+  // A companion object is similar to other objects, such as instances of a class.
+  // However, only a single instance of a companion object will exist for the duration of your program,
+  // which is why this is sometimes called the singleton pattern.
+  companion object {
+    const val LETTER = "letter"
+    const val SEARCH_PREFIX = "https://www.google.com/search?q="
+  }
+
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
 
@@ -22,7 +30,7 @@ class DetailActivity : AppCompatActivity() {
     // Retrieve the LETTER from the Intent extras
     // intent.extras.getString returns String? (String or null)
     // so toString() guarantees that the value will be a String
-    val letterId = "A"
+    val letterId = intent?.extras?.getString(LETTER).toString()
 
     val recyclerView = binding.recyclerView
     recyclerView.layoutManager = LinearLayoutManager(this)
