@@ -30,8 +30,9 @@ Collect 16 badges + 3 extra badges from this [list](https://docs.google.com/spre
           ✅ Display a Scrollable List
         * Project: Dogglers App 🐶
 3. Unit 3: Navigation (4 badges)
-    * WordActivity, DetailActivity
+    * WordActivity, DetailActivity, DessertActivity
         * [Navigate between screens](https://developer.android.com/courses/pathways/android-basics-kotlin-unit-3-pathway-1)
+          ✅ Navigate between screens
 
 ### Tech
 
