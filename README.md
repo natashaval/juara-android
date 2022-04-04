@@ -33,6 +33,8 @@ Collect 16 badges + 3 extra badges from this [list](https://docs.google.com/spre
     * WordActivity, DetailActivity, DessertActivity
         * [Navigate between screens](https://developer.android.com/courses/pathways/android-basics-kotlin-unit-3-pathway-1)
           ✅ Navigate between screens
+        * [Introduction to the Navigation component](https://developer.android.com/courses/pathways/android-basics-kotlin-unit-3-pathway-2)
+          ✅ Introduction to the Navigation component
 
 ### Tech
 
