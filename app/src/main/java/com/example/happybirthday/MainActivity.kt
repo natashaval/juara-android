@@ -47,5 +47,9 @@ class MainActivity : AppCompatActivity() {
     binding.btWords.setOnClickListener {
       startActivity(Intent(this, WordActivity::class.java))
     }
+
+    binding.btDessert.setOnClickListener {
+      startActivity(Intent(this, DessertActivity::class.java))
+    }
   }
 }

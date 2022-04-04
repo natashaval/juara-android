@@ -24,4 +24,10 @@
     <color name="blue_500">#FF2196F3</color>
     <color name="blue_700">#FF1976D2</color>
     <color name="blue_900">#004A9F</color>
+
+    <color name="dessert_primary">#008577</color>
+    <color name="dessert_primary_variant">#00574B</color>
+    <color name="dessert_secondary">#D81B60</color>
+    <color name="dessert_green">#6ab343</color>
+    <color name="dessert_grey">#99000000</color>
 </resources>
