@@ -8,9 +8,11 @@ import android.view.ViewGroup
 import android.view.accessibility.AccessibilityNodeInfo
 import android.widget.Button
 import androidx.annotation.RequiresApi
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.example.happybirthday.R
-import com.example.happybirthday.words.view.DetailActivity
+import com.example.happybirthday.words.view.LetterListFragmentDirections
+import com.example.happybirthday.words.view.WordListFragment
 
 /**
  * Adapter for the [RecyclerView] in [MainActivity].
@@ -48,13 +50,14 @@ class LetterAdapter :
    * Replaces the content of an existing view with new data
    */
   override fun onBindViewHolder(holder: LetterViewHolder, position: Int) {
-    val item = list.get(position)
+    val item = list[position]
     holder.button.text = item.toString()
     holder.button.setOnClickListener {
-      val context = holder.view.context
-      val intent = Intent(context, DetailActivity::class.java)
-      intent.putExtra(DetailActivity.LETTER, holder.button.text.toString())
-      context.startActivity(intent)
+      val action =
+        LetterListFragmentDirections.actionLetterListFragmentToWordListFragment(
+          holder.button.text.toString()
+        )
+      holder.view.findNavController().navigate(action)
     }
   }
 
