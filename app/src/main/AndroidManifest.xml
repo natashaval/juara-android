@@ -10,6 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HappyBirthday">
         <activity
+            android:name=".unscramble.ui.UnscrambleActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Unscramble" />
+        <activity
             android:name=".DessertActivity"
             android:exported="false"
             android:theme="@style/Theme.Dessert" />

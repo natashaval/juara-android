@@ -35,6 +35,8 @@ Collect 16 badges + 3 extra badges from this [list](https://docs.google.com/spre
           ✅ Navigate between screens
         * [Introduction to the Navigation component](https://developer.android.com/courses/pathways/android-basics-kotlin-unit-3-pathway-2)
           ✅ Introduction to the Navigation component
+    * UnscrambleActivity
+        * [Architecture components](https://developer.android.com/courses/pathways/android-basics-kotlin-unit-3-pathway-3)
 
 ### Tech
 
@@ -43,3 +45,5 @@ Collect 16 badges + 3 extra badges from this [list](https://docs.google.com/spre
 3. Unit Test (JUnit, Mockito)
 4. Integration Test (Espresso)
 5. RecyclerView
+6. Activity and Fragment Lifecycle
+7. Android Navigation Components

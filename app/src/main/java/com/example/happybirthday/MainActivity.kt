@@ -7,6 +7,7 @@ import android.widget.Button
 import com.example.happybirthday.affirmation.view.AffirmationActivity
 import com.example.happybirthday.databinding.ActivityMainBinding
 import com.example.happybirthday.dogglers.view.DogglersActivity
+import com.example.happybirthday.unscramble.ui.UnscrambleActivity
 import com.example.happybirthday.words.view.WordActivity
 import kotlin.reflect.KClass
 
@@ -50,6 +51,10 @@ class MainActivity : AppCompatActivity() {
 
     binding.btDessert.setOnClickListener {
       startActivity(Intent(this, DessertActivity::class.java))
+    }
+
+    binding.btUnscramble.setOnClickListener {
+      startActivity(Intent(this, UnscrambleActivity::class.java))
     }
   }
 }
