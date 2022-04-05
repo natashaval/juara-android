@@ -57,4 +57,6 @@ dependencies {
     implementation 'androidx.navigation:navigation-ui-ktx:2.4.1'
     androidTestImplementation 'androidx.navigation:navigation-testing:2.4.1'
     debugImplementation 'androidx.fragment:fragment-testing:1.4.1'
+    // viewmodel
+    runtimeOnly 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.1'
 }
