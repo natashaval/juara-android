@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import com.example.happybirthday.affirmation.view.AffirmationActivity
+import com.example.happybirthday.cupcake.CupcakeActivity
 import com.example.happybirthday.databinding.ActivityMainBinding
 import com.example.happybirthday.dogglers.view.DogglersActivity
 import com.example.happybirthday.unscramble.ui.UnscrambleActivity
@@ -55,6 +56,10 @@ class MainActivity : AppCompatActivity() {
 
     binding.btUnscramble.setOnClickListener {
       startActivity(Intent(this, UnscrambleActivity::class.java))
+    }
+
+    binding.btCupcake.setOnClickListener {
+      startActivity(Intent(this, CupcakeActivity::class.java))
     }
   }
 }

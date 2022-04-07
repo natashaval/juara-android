@@ -10,6 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HappyBirthday">
         <activity
+            android:name=".cupcake.CupcakeActivity"
+            android:exported="false"
+            android:label="@string/cupcake_app_name"
+            android:theme="@style/Theme.Cupcake" />
+        <activity
             android:name=".unscramble.ui.UnscrambleActivity"
             android:exported="false"
             android:theme="@style/Theme.Unscramble" />
