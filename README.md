@@ -39,7 +39,7 @@ Collect 16 badges + 3 extra badges from this [list](https://docs.google.com/spre
         * [Architecture components](https://developer.android.com/courses/pathways/android-basics-kotlin-unit-3-pathway-3)
           ✅ Architecture components
     * CupcakeActivity
-        * 
+        * [Advanced navigation app examples](https://developer.android.com/courses/pathways/android-basics-kotlin-unit-3-pathway-4)
 
 ### Tech
 
