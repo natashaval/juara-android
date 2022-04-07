@@ -5,6 +5,7 @@
     <string name="roll">Roll</string>
 
     <!--Lemonade-->
+    <string name="lemonade_app_name">Lemonade</string>
     <string name="lemon_select">Click to select a lemon!</string>
     <string name="lemon_squeeze">Click to juice the lemon!</string>
     <string name="lemon_drink">Click to drink your lemonade!</string>
@@ -34,7 +35,7 @@
     <string name="affirmation10">I will be present in all the moments that this day brings.</string>
 
     <!--Dogglers-->
-    <string name="doggler_name">Dogglers</string>
+    <string name="doggler_app_name">Dogglers</string>
     <string name="dog_age">Age: %1$s</string>
     <string name="dog_hobbies">Hobbies: %1$s</string>
     <string name="vertical">Vertical</string>
@@ -50,12 +51,14 @@
     <string name="word_list_fragment_label">Words That Start With {letter}</string>
 
     <!--Dessert Clicker-->
+    <string name="dessert_app_name">Dessert Clicker</string>
     <string name="dessert_sold">Desserts Sold</string>
     <string name="share_text">I\'ve clicked %1$d Desserts for a total of %2$d$ #AndroidDessertClicker</string>
     <string name="share">Share</string>
     <string name="sharing_not_available">Sharing Not Available</string>
 
     <!--Unscramble-->
+    <string name="unscramble_app_name">Unscramble</string>
     <string name="instructions">Unscramble the word using all the letters.</string>
     <string name="skip">Skip</string>
     <string name="submit">Submit</string>

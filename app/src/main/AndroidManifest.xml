@@ -17,32 +17,35 @@
         <activity
             android:name=".unscramble.ui.UnscrambleActivity"
             android:exported="false"
+            android:label="@string/unscramble_app_name"
             android:theme="@style/Theme.Unscramble" />
         <activity
             android:name=".DessertActivity"
             android:exported="false"
+            android:label="@string/dessert_app_name"
             android:theme="@style/Theme.Dessert" />
         <activity
             android:name=".words.view.WordActivity"
             android:exported="false"
+            android:label="@string/words_app_name"
             android:theme="@style/Theme.Words" />
         <activity
             android:name=".dogglers.view.VerticalListActivity"
-            android:label="@string/doggler_name">
+            android:label="@string/doggler_app_name">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".dogglers.view.DogglersActivity" />
         </activity>
         <activity
             android:name=".dogglers.view.HorizontalListActivity"
-            android:label="@string/doggler_name">
+            android:label="@string/doggler_app_name">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".dogglers.view.DogglersActivity" />
         </activity>
         <activity
             android:name=".dogglers.view.GridListActivity"
-            android:label="@string/doggler_name">
+            android:label="@string/doggler_app_name">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".dogglers.view.DogglersActivity" />
@@ -50,7 +53,7 @@
         <activity
             android:name=".dogglers.view.DogglersActivity"
             android:exported="false"
-            android:label="@string/doggler_name" />
+            android:label="@string/doggler_app_name" />
         <activity
             android:name=".affirmation.view.AffirmationActivity"
             android:exported="false"
@@ -62,6 +65,7 @@
         <activity
             android:name=".LemonadeActivity"
             android:exported="false"
+            android:label="@string/lemonade_app_name"
             android:theme="@style/Theme.Lemonade" />
         <activity
             android:name=".DebugActivity"
