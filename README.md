@@ -8,38 +8,40 @@ Collect 16 badges + 3 extra badges from this [list](https://docs.google.com/spre
 
 1. Unit 1: Kotlin basics (4 badges)
     * MainActivity
-        * [Introduction to Kotlin](https://developer.android.com/courses/pathways/android-basics-kotlin-one)
+        * [Introduction to Kotlin](https://developer.android.com/courses/pathways/android-basics-kotlin-one)  
           ✅ Introduction to Kotlin
-        * [Create your first Android app](https://developer.android.com/courses/pathways/android-basics-kotlin-two)
+        * [Create your first Android app](https://developer.android.com/courses/pathways/android-basics-kotlin-two)  
           ✅ First App in Android Studio
     * BirthdayActivity
-        * [Build a basic layout](https://developer.android.com/courses/pathways/android-basics-kotlin-three)
+        * [Build a basic layout](https://developer.android.com/courses/pathways/android-basics-kotlin-three)  
           ✅ Build a Basic Layout
     * DebugActivity, DiceActivity, LemonadeActivity
-        * [Add a button to an app](https://developer.android.com/courses/pathways/android-basics-kotlin-four)
+        * [Add a button to an app](https://developer.android.com/courses/pathways/android-basics-kotlin-four)  
           ✅ Dice Roller App
         * Project: Lemonade App 🍋
 2. Unit 2: Layouts (3 badges)
     * TipActivity
-        * [Get user input in an app: Part 1](https://developer.android.com/courses/pathways/android-basics-kotlin-unit-2-pathway-1)
+        * [Get user input in an app: Part 1](https://developer.android.com/courses/pathways/android-basics-kotlin-unit-2-pathway-1)  
           ✅ Get user input in an app: Part 1
-        * [Get user input in an app: Part 2](https://developer.android.com/courses/pathways/android-basics-kotlin-unit-2-pathway-2)
+        * [Get user input in an app: Part 2](https://developer.android.com/courses/pathways/android-basics-kotlin-unit-2-pathway-2)  
           ✅ Get user input in an app: Part 2
     * AffirmationActivity, Dogglers Activity
-        * [Display a scrollable list](https://developer.android.com/courses/pathways/android-basics-kotlin-unit-2-pathway-3)
+        * [Display a scrollable list](https://developer.android.com/courses/pathways/android-basics-kotlin-unit-2-pathway-3)  
           ✅ Display a Scrollable List
         * Project: Dogglers App 🐶
 3. Unit 3: Navigation (4 badges)
     * WordActivity, DetailActivity, DessertActivity
-        * [Navigate between screens](https://developer.android.com/courses/pathways/android-basics-kotlin-unit-3-pathway-1)
+        * [Navigate between screens](https://developer.android.com/courses/pathways/android-basics-kotlin-unit-3-pathway-1)  
           ✅ Navigate between screens
-        * [Introduction to the Navigation component](https://developer.android.com/courses/pathways/android-basics-kotlin-unit-3-pathway-2)
+        * [Introduction to the Navigation component](https://developer.android.com/courses/pathways/android-basics-kotlin-unit-3-pathway-2)  
           ✅ Introduction to the Navigation component
     * UnscrambleActivity
-        * [Architecture components](https://developer.android.com/courses/pathways/android-basics-kotlin-unit-3-pathway-3)
+        * [Architecture components](https://developer.android.com/courses/pathways/android-basics-kotlin-unit-3-pathway-3)  
           ✅ Architecture components
-    * CupcakeActivity
-        * [Advanced navigation app examples](https://developer.android.com/courses/pathways/android-basics-kotlin-unit-3-pathway-4)
+    * CupcakeActivity, LunchActivity
+        * [Advanced navigation app examples](https://developer.android.com/courses/pathways/android-basics-kotlin-unit-3-pathway-4)  
+          ✅ Advanced navigation app examples
+        * Project: Lunch Tray App 🍱
 
 ### Tech
 

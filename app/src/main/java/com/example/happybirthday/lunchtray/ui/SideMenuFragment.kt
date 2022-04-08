@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.activityViewModels
+import androidx.navigation.fragment.findNavController
 import com.example.happybirthday.R
 import com.example.happybirthday.databinding.FragmentSideMenuBinding
 import com.example.happybirthday.lunchtray.viewmodel.LunchViewModel
@@ -34,8 +35,7 @@ class SideMenuFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         _binding = FragmentSideMenuBinding.inflate(inflater, container, false)
-        val root = binding.root
-        return root
+        return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -44,6 +44,7 @@ class SideMenuFragment : Fragment() {
             lifecycleOwner = viewLifecycleOwner
             viewModel = sharedViewModel
             // TODO: initialize the SideMenuFragment variables
+            sideMenuFragment = this@SideMenuFragment
         }
     }
 
@@ -52,6 +53,7 @@ class SideMenuFragment : Fragment() {
      */
     fun goToNextScreen() {
         // TODO: Navigate to the AccompanimentMenuFragment
+        findNavController().navigate(R.id.action_sideMenuFragment_to_accompanimentMenuFragment)
     }
 
     /**
@@ -59,7 +61,9 @@ class SideMenuFragment : Fragment() {
      */
     fun cancelOrder() {
         // TODO: Reset order in view model
+        sharedViewModel.resetOrder()
         // TODO: Navigate back to the [StartFragment] to start over
+        findNavController().navigate(R.id.action_sideMenuFragment_to_startOrderFragment)
     }
 
     /**
