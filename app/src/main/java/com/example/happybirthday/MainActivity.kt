@@ -8,6 +8,7 @@ import com.example.happybirthday.affirmation.view.AffirmationActivity
 import com.example.happybirthday.cupcake.CupcakeActivity
 import com.example.happybirthday.databinding.ActivityMainBinding
 import com.example.happybirthday.dogglers.view.DogglersActivity
+import com.example.happybirthday.lunchtray.ui.LunchActivity
 import com.example.happybirthday.unscramble.ui.UnscrambleActivity
 import com.example.happybirthday.words.view.WordActivity
 import kotlin.reflect.KClass
@@ -60,6 +61,10 @@ class MainActivity : AppCompatActivity() {
 
     binding.btCupcake.setOnClickListener {
       startActivity(Intent(this, CupcakeActivity::class.java))
+    }
+
+    binding.btLunch.setOnClickListener {
+      startActivity(Intent(this, LunchActivity::class.java))
     }
   }
 }
