@@ -60,4 +60,6 @@ dependencies {
     debugImplementation 'androidx.fragment:fragment-testing:1.4.1'
     // viewmodel
     runtimeOnly 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.1'
+    // unit test livedata
+    testImplementation 'androidx.arch.core:core-testing:2.1.0'
 }
