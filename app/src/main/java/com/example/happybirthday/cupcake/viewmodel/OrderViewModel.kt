@@ -69,7 +69,7 @@ class OrderViewModel: ViewModel() {
         _price.value = 0.0
     }
 
-    private fun updatePrice() {
+    fun updatePrice() {
         var calculatedPrice = (quantity.value ?: 0) * PRICE_PER_CUPCAKE
         if (dateOptions[0] == _date.value) {
             calculatedPrice += PRICE_FOR_SAME_DAY_PICKUP

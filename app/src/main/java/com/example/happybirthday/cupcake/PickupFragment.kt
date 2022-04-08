@@ -41,6 +41,7 @@ class PickupFragment : Fragment() {
             viewModel = sharedViewModel
             pickupFragment = this@PickupFragment
         }
+        sharedViewModel.updatePrice()
     }
 
     /**
@@ -57,5 +58,10 @@ class PickupFragment : Fragment() {
     override fun onDestroyView() {
         super.onDestroyView()
         binding = null
+    }
+
+    fun cancelOrder() {
+        sharedViewModel.resetOrder()
+        findNavController().navigate(R.id.action_pickupFragment_to_startFragment)
     }
 }
