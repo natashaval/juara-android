@@ -4,8 +4,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <data>
         <variable
-            name="viewModel"
-            type="com.example.happybirthday.mars.viewmodel.OverviewViewModel" />
+            name="photo"
+            type="com.example.happybirthday.mars.model.MarsPhoto" />
     </data>
 
     <ImageView
@@ -15,6 +15,6 @@
         android:scaleType="fitXY"
         android:adjustViewBounds="true"
         android:padding="2dp"
-        app:imageUrl="@{viewModel.photos.imgSrcUrl}"
+        app:imageUrl="@{photo.imgSrcUrl}"
         tools:src="@tools:sample/backgrounds/scenic"/>
 </layout>
