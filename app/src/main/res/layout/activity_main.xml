@@ -130,5 +130,16 @@
         app:layout_constraintStart_toStartOf="@id/bt_birthday"
         app:layout_constraintTop_toBottomOf="@id/bt_cupcake" />
 
+    <Button
+        android:id="@+id/bt_mars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Mars Photos!"
+        android:backgroundTint="@color/purple_500"
+        app:layout_constraintEnd_toEndOf="@id/bt_birthday"
+        app:layout_constraintStart_toStartOf="@id/bt_birthday"
+        app:layout_constraintTop_toBottomOf="@id/bt_lunch" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

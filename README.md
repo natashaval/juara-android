@@ -5,7 +5,8 @@ Collect 16 badges + 3 extra badges from this [list](https://docs.google.com/spre
 **Google Developer Profile**: [natashaval](https://developers.google.com/profile/u/natashaval)
 
 ## Android Basics Codelabs
-
+**[Android Basics in Kotlin](https://developer.android.com/courses/android-basics-kotlin/course)**  
+<br/>
 1. Unit 1: Kotlin basics (4 badges)
     * MainActivity
         * [Introduction to Kotlin](https://developer.android.com/courses/pathways/android-basics-kotlin-one)  
@@ -42,6 +43,10 @@ Collect 16 badges + 3 extra badges from this [list](https://docs.google.com/spre
         * [Advanced navigation app examples](https://developer.android.com/courses/pathways/android-basics-kotlin-unit-3-pathway-4)  
           ✅ Advanced navigation app examples
         * Project: Lunch Tray App 🍱
+4. Unit 4: Connect to the internet (2 badges)
+    * MarsActivity
+        * [Coroutines](https://developer.android.com/courses/pathways/android-basics-kotlin-unit-4-pathway-1)  
+          ✅ Coroutines
 
 ### Tech
 
@@ -52,3 +57,5 @@ Collect 16 badges + 3 extra badges from this [list](https://docs.google.com/spre
 5. RecyclerView
 6. Activity and Fragment Lifecycle
 7. Android Navigation Components
+8. ViewModel and LiveData
+9. Coroutines

@@ -101,6 +101,7 @@
         <item quantity="one">%d cupcake</item>
         <item quantity="other">%d cupcakes</item>
     </plurals>
+
     <!--Lunch Tray-->
     <string name="lunch_app_name">Lunch Tray</string>
     <string name="title_start_order">Order</string>
@@ -115,4 +116,7 @@
     <string name="total">Total: %s</string>
     <string name="submit_order">Submit Order</string>
     <string name="order_submitted">Order Submitted!</string>
+
+    <!--Mars Photos-->
+    <string name="mars_app_name">Mars Photos</string>
 </resources>
