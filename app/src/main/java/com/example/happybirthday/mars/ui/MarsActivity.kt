@@ -1,4 +1,4 @@
-package com.example.happybirthday.mars
+package com.example.happybirthday.mars.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

@@ -9,10 +9,9 @@ import com.example.happybirthday.cupcake.CupcakeActivity
 import com.example.happybirthday.databinding.ActivityMainBinding
 import com.example.happybirthday.dogglers.view.DogglersActivity
 import com.example.happybirthday.lunchtray.ui.LunchActivity
-import com.example.happybirthday.mars.MarsActivity
+import com.example.happybirthday.mars.ui.MarsActivity
 import com.example.happybirthday.unscramble.ui.UnscrambleActivity
 import com.example.happybirthday.words.view.WordActivity
-import kotlin.reflect.KClass
 
 class MainActivity : AppCompatActivity() {
   private lateinit var binding: ActivityMainBinding

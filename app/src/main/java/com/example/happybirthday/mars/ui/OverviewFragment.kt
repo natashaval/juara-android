@@ -1,4 +1,4 @@
-package com.example.happybirthday.mars
+package com.example.happybirthday.mars.ui
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,8 +6,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
-import com.example.happybirthday.R
 import com.example.happybirthday.databinding.FragmentOverviewBinding
+import com.example.happybirthday.mars.viewmodel.OverviewViewModel
 
 /**
  * This fragment shows the the status of the Mars photos web services transaction.
@@ -27,7 +27,7 @@ class OverviewFragment : Fragment() {
         val binding = FragmentOverviewBinding.inflate(inflater)
 
         // Allows Data Binding to Observe LiveData with the lifecycle of this Fragment
-        binding.lifecycleOwner = this
+        binding.lifecycleOwner = viewLifecycleOwner
 
         // Giving the binding access to the OverviewViewModel
         binding.viewModel = viewModel
