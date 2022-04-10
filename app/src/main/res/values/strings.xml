@@ -119,4 +119,7 @@
 
     <!--Mars Photos-->
     <string name="mars_app_name">Mars Photos</string>
+
+    <!--Amphibians-->
+    <string name="amphibians_app_name">Amphibians</string>
 </resources>

@@ -35,7 +35,7 @@ class NavigationTests : BaseTest() {
             launchFragmentInContainer<StartOrderFragment>(themeResId = R.style.Theme_LunchTray)
         // Configure nav controller
         startOrderScenario.onFragment{ fragment ->
-            navController.setGraph(R.navigation.lunch_navigation)
+            navController.setGraph(R.navigation.lunch_graph)
             Navigation.setViewNavController(fragment.requireView(), navController)
         }
         // Click start order
@@ -57,7 +57,7 @@ class NavigationTests : BaseTest() {
             launchFragmentInContainer<EntreeMenuFragment>(themeResId = R.style.Theme_LunchTray)
         // Configure nav controller
         entreeMenuScenario.onFragment{ fragment ->
-            navController.setGraph(R.navigation.lunch_navigation)
+            navController.setGraph(R.navigation.lunch_graph)
             // Destination defaults to the home fragment, we have to explicitly set the current
             // destination
             navController.setCurrentDestination(destId = R.id.entreeMenuFragment)
@@ -82,7 +82,7 @@ class NavigationTests : BaseTest() {
             launchFragmentInContainer<EntreeMenuFragment>(themeResId = R.style.Theme_LunchTray)
         // Configure nav controller
         entreeMenuScenario.onFragment{ fragment ->
-            navController.setGraph(R.navigation.lunch_navigation)
+            navController.setGraph(R.navigation.lunch_graph)
             // Destination defaults to the home fragment, we have to explicitly set the current
             // destination
             navController.setCurrentDestination(destId = R.id.entreeMenuFragment)
@@ -104,7 +104,7 @@ class NavigationTests : BaseTest() {
         val sideMenuScenario =
             launchFragmentInContainer<SideMenuFragment>(themeResId = R.style.Theme_LunchTray)
         sideMenuScenario.onFragment{ fragment ->
-            navController.setGraph(R.navigation.lunch_navigation)
+            navController.setGraph(R.navigation.lunch_graph)
             navController.setCurrentDestination(destId = R.id.sideMenuFragment)
             Navigation.setViewNavController(fragment.requireView(), navController)
         }
@@ -122,7 +122,7 @@ class NavigationTests : BaseTest() {
         val sideMenuScenario =
             launchFragmentInContainer<SideMenuFragment>(themeResId = R.style.Theme_LunchTray)
         sideMenuScenario.onFragment{ fragment ->
-            navController.setGraph(R.navigation.lunch_navigation)
+            navController.setGraph(R.navigation.lunch_graph)
             navController.setCurrentDestination(destId = R.id.sideMenuFragment)
             Navigation.setViewNavController(fragment.requireView(), navController)
         }
@@ -141,7 +141,7 @@ class NavigationTests : BaseTest() {
             launchFragmentInContainer<AccompanimentMenuFragment>(
                 themeResId = R.style.Theme_LunchTray)
         accompanimentMenuScenario.onFragment{ fragment ->
-            navController.setGraph(R.navigation.lunch_navigation)
+            navController.setGraph(R.navigation.lunch_graph)
             navController.setCurrentDestination(destId = R.id.accompanimentMenuFragment)
             Navigation.setViewNavController(fragment.requireView(), navController)
         }
@@ -160,7 +160,7 @@ class NavigationTests : BaseTest() {
             launchFragmentInContainer<AccompanimentMenuFragment>(
                 themeResId = R.style.Theme_LunchTray)
         accompanimentMenuScenario.onFragment{ fragment ->
-            navController.setGraph(R.navigation.lunch_navigation)
+            navController.setGraph(R.navigation.lunch_graph)
             navController.setCurrentDestination(destId = R.id.accompanimentMenuFragment)
             Navigation.setViewNavController(fragment.requireView(), navController)
         }
@@ -178,7 +178,7 @@ class NavigationTests : BaseTest() {
         val checkoutScenario =
             launchFragmentInContainer<CheckoutFragment>(themeResId = R.style.Theme_LunchTray)
         checkoutScenario.onFragment{ fragment ->
-            navController.setGraph(R.navigation.lunch_navigation)
+            navController.setGraph(R.navigation.lunch_graph)
             navController.setCurrentDestination(destId = R.id.checkoutFragment)
             Navigation.setViewNavController(fragment.requireView(), navController)
         }
@@ -196,7 +196,7 @@ class NavigationTests : BaseTest() {
         val checkoutScenario =
             launchFragmentInContainer<CheckoutFragment>(themeResId = R.style.Theme_LunchTray)
         checkoutScenario.onFragment{ fragment ->
-            navController.setGraph(R.navigation.lunch_navigation)
+            navController.setGraph(R.navigation.lunch_graph)
             navController.setCurrentDestination(destId = R.id.checkoutFragment)
             Navigation.setViewNavController(fragment.requireView(), navController)
         }
