@@ -13,6 +13,7 @@
     <string name="squeeze_count">Squeeze count: %1$d, keep squeezing!</string>
 
     <!--Tip Calculator-->
+    <string name="tip_app_name">Tip Calculator</string>
     <string name="cost_of_service">Cost of Service</string>
     <string name="how_was_the_service">How was the service?</string>
     <string name="amazing_service">Amazing (20%)</string>
@@ -23,6 +24,7 @@
     <string name="tip_amount">Tip Amount: %s</string>
 
     <!--Affirmation-->
+    <string name="affirmation_app_name">Affirmation</string>
     <string name="affirmation1">I am strong.</string>
     <string name="affirmation2">I believe in myself.</string>
     <string name="affirmation3">Each day is a new opportunity to grow and be a better version of myself.</string>

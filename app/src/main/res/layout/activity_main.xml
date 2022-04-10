@@ -1,166 +1,180 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-<androidx.constraintlayout.widget.ConstraintLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:paddingVertical="16dp"
-    tools:context=".MainActivity">
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <Button
-        android:id="@+id/bt_birthday"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Birthday Card!"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/bt_dice"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Roll dice!"
-        app:layout_constraintEnd_toEndOf="@id/bt_birthday"
-        app:layout_constraintStart_toStartOf="@id/bt_birthday"
-        app:layout_constraintTop_toBottomOf="@id/bt_birthday" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="16dp"
+            tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/bt_lemonade"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Lemonade!"
-        android:textColor="@color/black"
-        app:backgroundTint="@color/yellow_dark"
-        app:layout_constraintEnd_toEndOf="@id/bt_birthday"
-        app:layout_constraintStart_toStartOf="@id/bt_birthday"
-        app:layout_constraintTop_toBottomOf="@id/bt_dice" />
+            <Button
+                android:id="@+id/bt_birthday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Birthday Card!"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/bt_tip"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Tip Calculator!"
-        android:textColor="@color/black"
-        app:backgroundTint="@color/teal_200"
-        app:layout_constraintEnd_toEndOf="@id/bt_birthday"
-        app:layout_constraintStart_toStartOf="@id/bt_birthday"
-        app:layout_constraintTop_toBottomOf="@id/bt_lemonade" />
+            <Button
+                android:id="@+id/bt_dice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Roll dice!"
+                app:layout_constraintEnd_toEndOf="@id/bt_birthday"
+                app:layout_constraintStart_toStartOf="@id/bt_birthday"
+                app:layout_constraintTop_toBottomOf="@id/bt_birthday" />
 
-    <Button
-        android:id="@+id/bt_affirmations"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Affirmations!"
-        app:backgroundTint="@color/purple_200"
-        app:layout_constraintEnd_toEndOf="@id/bt_birthday"
-        app:layout_constraintStart_toStartOf="@id/bt_birthday"
-        app:layout_constraintTop_toBottomOf="@id/bt_tip" />
+            <Button
+                android:id="@+id/bt_lemonade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Lemonade!"
+                app:backgroundTint="@color/yellow_dark"
+                app:layout_constraintEnd_toEndOf="@id/bt_birthday"
+                app:layout_constraintStart_toStartOf="@id/bt_birthday"
+                app:layout_constraintTop_toBottomOf="@id/bt_dice"
+                app:openActivity="@{@string/lemonade_app_name}" />
 
-    <Button
-        android:id="@+id/bt_dogglers"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Dogglers!"
-        app:layout_constraintEnd_toEndOf="@id/bt_birthday"
-        app:layout_constraintStart_toStartOf="@id/bt_birthday"
-        app:layout_constraintTop_toBottomOf="@id/bt_affirmations" />
+            <Button
+                android:id="@+id/bt_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Tip Calculator!"
+                app:backgroundTint="@color/teal_200"
+                app:layout_constraintEnd_toEndOf="@id/bt_birthday"
+                app:layout_constraintStart_toStartOf="@id/bt_birthday"
+                app:layout_constraintTop_toBottomOf="@id/bt_lemonade"
+                app:openActivity="@{@string/tip_app_name}" />
 
-    <Button
-        android:id="@+id/bt_words"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Words!"
-        android:backgroundTint="@color/teal_900"
-        app:layout_constraintEnd_toEndOf="@id/bt_birthday"
-        app:layout_constraintStart_toStartOf="@id/bt_birthday"
-        app:layout_constraintTop_toBottomOf="@id/bt_dogglers" />
+            <Button
+                android:id="@+id/bt_affirmations"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Affirmations!"
+                app:backgroundTint="@color/purple_200"
+                app:layout_constraintEnd_toEndOf="@id/bt_birthday"
+                app:layout_constraintStart_toStartOf="@id/bt_birthday"
+                app:layout_constraintTop_toBottomOf="@id/bt_tip"
+                app:openActivity="@{@string/affirmation_app_name}" />
 
-    <Button
-        android:id="@+id/bt_dessert"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Dessert Clicker!"
-        android:backgroundTint="@color/dessert_primary"
-        app:layout_constraintEnd_toEndOf="@id/bt_birthday"
-        app:layout_constraintStart_toStartOf="@id/bt_birthday"
-        app:layout_constraintTop_toBottomOf="@id/bt_words" />
+            <Button
+                android:id="@+id/bt_dogglers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Dogglers!"
+                app:layout_constraintEnd_toEndOf="@id/bt_birthday"
+                app:layout_constraintStart_toStartOf="@id/bt_birthday"
+                app:layout_constraintTop_toBottomOf="@id/bt_affirmations"
+                app:openActivity="@{@string/doggler_app_name}" />
 
-    <Button
-        android:id="@+id/bt_unscramble"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Unscramble!"
-        android:backgroundTint="@color/indigo_500"
-        app:layout_constraintEnd_toEndOf="@id/bt_birthday"
-        app:layout_constraintStart_toStartOf="@id/bt_birthday"
-        app:layout_constraintTop_toBottomOf="@id/bt_dessert" />
+            <Button
+                android:id="@+id/bt_words"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="@color/teal_900"
+                android:text="Words!"
+                app:layout_constraintEnd_toEndOf="@id/bt_birthday"
+                app:layout_constraintStart_toStartOf="@id/bt_birthday"
+                app:layout_constraintTop_toBottomOf="@id/bt_dogglers"
+                app:openActivity="@{@string/words_app_name}" />
 
-    <Button
-        android:id="@+id/bt_cupcake"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Cupcake!"
-        android:backgroundTint="@color/pink_600"
-        app:layout_constraintEnd_toEndOf="@id/bt_birthday"
-        app:layout_constraintStart_toStartOf="@id/bt_birthday"
-        app:layout_constraintTop_toBottomOf="@id/bt_unscramble" />
+            <Button
+                android:id="@+id/bt_dessert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="@color/dessert_primary"
+                android:text="Dessert Clicker!"
+                app:layout_constraintEnd_toEndOf="@id/bt_birthday"
+                app:layout_constraintStart_toStartOf="@id/bt_birthday"
+                app:layout_constraintTop_toBottomOf="@id/bt_words"
+                app:openActivity="@{@string/dessert_app_name}" />
 
-    <Button
-        android:id="@+id/bt_lunch"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Lunch Tray!"
-        android:backgroundTint="@color/purple_500"
-        app:layout_constraintEnd_toEndOf="@id/bt_birthday"
-        app:layout_constraintStart_toStartOf="@id/bt_birthday"
-        app:layout_constraintTop_toBottomOf="@id/bt_cupcake" />
+            <Button
+                android:id="@+id/bt_unscramble"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="@color/indigo_500"
+                android:text="Unscramble!"
+                app:layout_constraintEnd_toEndOf="@id/bt_birthday"
+                app:layout_constraintStart_toStartOf="@id/bt_birthday"
+                app:layout_constraintTop_toBottomOf="@id/bt_dessert"
+                app:openActivity="@{@string/unscramble_app_name}" />
 
-    <Button
-        android:id="@+id/bt_mars"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Mars Photos!"
-        android:backgroundTint="@color/purple_500"
-        app:layout_constraintEnd_toEndOf="@id/bt_birthday"
-        app:layout_constraintStart_toStartOf="@id/bt_birthday"
-        app:layout_constraintTop_toBottomOf="@id/bt_lunch" />
+            <Button
+                android:id="@+id/bt_cupcake"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="@color/pink_600"
+                android:text="Cupcake!"
+                app:layout_constraintEnd_toEndOf="@id/bt_birthday"
+                app:layout_constraintStart_toStartOf="@id/bt_birthday"
+                app:layout_constraintTop_toBottomOf="@id/bt_unscramble"
+                app:openActivity="@{@string/cupcake_app_name}" />
 
-    <Button
-        android:id="@+id/bt_amphibians"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Amphibians!"
-        android:backgroundTint="@color/green_500"
-        app:layout_constraintEnd_toEndOf="@id/bt_birthday"
-        app:layout_constraintStart_toStartOf="@id/bt_birthday"
-        app:layout_constraintTop_toBottomOf="@id/bt_mars" />
+            <Button
+                android:id="@+id/bt_lunch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="@color/purple_500"
+                android:text="Lunch Tray!"
+                app:layout_constraintEnd_toEndOf="@id/bt_birthday"
+                app:layout_constraintStart_toStartOf="@id/bt_birthday"
+                app:layout_constraintTop_toBottomOf="@id/bt_cupcake"
+                app:openActivity="@{@string/lunch_app_name}" />
 
-    <Button
-        android:id="@+id/bt_bus"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Bus Schedule!"
-        app:layout_constraintEnd_toEndOf="@id/bt_birthday"
-        app:layout_constraintStart_toStartOf="@id/bt_birthday"
-        app:layout_constraintTop_toBottomOf="@id/bt_amphibians" />
+            <Button
+                android:id="@+id/bt_mars"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="@color/purple_500"
+                android:text="Mars Photos!"
+                app:layout_constraintEnd_toEndOf="@id/bt_birthday"
+                app:layout_constraintStart_toStartOf="@id/bt_birthday"
+                app:layout_constraintTop_toBottomOf="@id/bt_lunch"
+                app:openActivity="@{@string/mars_app_name}" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
-</ScrollView>
+            <Button
+                android:id="@+id/bt_amphibians"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="@color/green_500"
+                android:text="Amphibians!"
+                app:layout_constraintEnd_toEndOf="@id/bt_birthday"
+                app:layout_constraintStart_toStartOf="@id/bt_birthday"
+                app:layout_constraintTop_toBottomOf="@id/bt_mars"
+                app:openActivity="@{@string/amphibians_app_name}" />
+
+            <Button
+                android:id="@+id/bt_bus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Bus Schedule!"
+                app:layout_constraintEnd_toEndOf="@id/bt_birthday"
+                app:layout_constraintStart_toStartOf="@id/bt_birthday"
+                app:layout_constraintTop_toBottomOf="@id/bt_amphibians"
+                app:openActivity="@{@string/bus_app_name}" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>

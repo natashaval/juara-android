@@ -77,10 +77,12 @@
         <activity
             android:name=".affirmation.view.AffirmationActivity"
             android:exported="false"
+            android:label="@string/affirmation_app_name"
             android:theme="@style/Theme.Affirmations" />
         <activity
             android:name=".TipActivity"
             android:exported="false"
+            android:label="@string/tip_app_name"
             android:theme="@style/Theme.TipTime" />
         <activity
             android:name=".LemonadeActivity"
