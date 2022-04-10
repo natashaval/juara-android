@@ -12,10 +12,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HappyBirthday">
         <activity
-            android:name=".amphibians.ui.AmphibianActivity"
-            android:theme="@style/Theme.Amphibians"
-            android:label="@string/amphibians_app_name"
+            android:name=".busschedule.ui.BusActivity"
+            android:label="@string/bus_app_name"
             android:exported="false" />
+        <activity
+            android:name=".amphibians.ui.AmphibianActivity"
+            android:exported="false"
+            android:label="@string/amphibians_app_name"
+            android:theme="@style/Theme.Amphibians" />
         <activity
             android:name=".mars.ui.MarsActivity"
             android:exported="false"

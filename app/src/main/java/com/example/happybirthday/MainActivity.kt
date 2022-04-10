@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Button
 import com.example.happybirthday.affirmation.view.AffirmationActivity
 import com.example.happybirthday.amphibians.ui.AmphibianActivity
+import com.example.happybirthday.busschedule.ui.BusActivity
 import com.example.happybirthday.cupcake.CupcakeActivity
 import com.example.happybirthday.databinding.ActivityMainBinding
 import com.example.happybirthday.dogglers.view.DogglersActivity
@@ -74,6 +75,10 @@ class MainActivity : AppCompatActivity() {
 
     binding.btAmphibians.setOnClickListener {
       startActivity(Intent(this, AmphibianActivity::class.java))
+    }
+
+    binding.btBus.setOnClickListener {
+      startActivity(Intent(this, BusActivity::class.java))
     }
   }
 }

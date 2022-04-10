@@ -122,4 +122,9 @@
 
     <!--Amphibians-->
     <string name="amphibians_app_name">Amphibians</string>
+
+    <!--Bus Schedule-->
+    <string name="bus_app_name">Bus Schedule</string>
+    <string name="bus_stop_header">Stop Name</string>
+    <string name="arrival_time_header">Arrival Time</string>
 </resources>
