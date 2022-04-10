@@ -44,9 +44,12 @@ Collect 16 badges + 3 extra badges from this [list](https://docs.google.com/spre
           ✅ Advanced navigation app examples
         * Project: Lunch Tray App 🍱
 4. Unit 4: Connect to the internet (2 badges)
-    * MarsActivity
+    * MarsActivity, AmphibianActivity
         * [Coroutines](https://developer.android.com/courses/pathways/android-basics-kotlin-unit-4-pathway-1)  
           ✅ Coroutines
+        * [Get and display data from the internet](https://developer.android.com/courses/pathways/android-basics-kotlin-unit-4-pathway-2)  
+          ✅ Get and display data from the internet
+        * Project: Amphibians App 🐸
 
 ### Tech
 

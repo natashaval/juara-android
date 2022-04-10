@@ -6,6 +6,7 @@ import androidx.test.espresso.action.ViewActions
 import androidx.test.espresso.assertion.ViewAssertions
 import androidx.test.espresso.matcher.ViewMatchers
 import androidx.test.ext.junit.runners.AndroidJUnit4
+import com.example.happybirthday.R
 import com.example.happybirthday.amphibians.ui.AmphibianActivity
 import com.example.happybirthday.amphibians.ui.AmphibianListFragment
 import org.junit.Test
