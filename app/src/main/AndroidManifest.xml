@@ -13,9 +13,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HappyBirthday">
         <activity
+            android:name=".inventory.ui.InventoryActivity"
+            android:exported="false"
+            android:label="@string/inventory_app_name"
+            android:theme="@style/Theme.InventoryApp" />
+        <activity
             android:name=".busschedule.ui.BusActivity"
-            android:label="@string/bus_app_name"
-            android:exported="false" />
+            android:exported="false"
+            android:label="@string/bus_app_name" />
         <activity
             android:name=".amphibians.ui.AmphibianActivity"
             android:exported="false"

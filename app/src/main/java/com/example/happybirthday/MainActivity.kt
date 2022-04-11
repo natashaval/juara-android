@@ -14,6 +14,7 @@ import com.example.happybirthday.busschedule.ui.BusActivity
 import com.example.happybirthday.cupcake.CupcakeActivity
 import com.example.happybirthday.databinding.ActivityMainBinding
 import com.example.happybirthday.dogglers.view.DogglersActivity
+import com.example.happybirthday.inventory.ui.InventoryActivity
 import com.example.happybirthday.lunchtray.ui.LunchActivity
 import com.example.happybirthday.mars.ui.MarsActivity
 import com.example.happybirthday.unscramble.ui.UnscrambleActivity
@@ -55,6 +56,7 @@ fun bindActivity(button: Button, appName: String) {
         resources.getString(R.string.mars_app_name) -> MarsActivity::class.java
         resources.getString(R.string.amphibians_app_name) -> AmphibianActivity::class.java
         resources.getString(R.string.bus_app_name) -> BusActivity::class.java
+        resources.getString(R.string.inventory_app_name) -> InventoryActivity::class.java
         else -> MainActivity::class.java
     }
 

@@ -28,4 +28,6 @@
 
     <dimen name="bus_stop_item_horizontal_padding">16dp</dimen>
     <dimen name="bus_stop_item_vertical_padding">8dp</dimen>
+
+    <dimen name="margin">16dp</dimen>
 </resources>
