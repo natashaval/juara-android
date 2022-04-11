@@ -33,7 +33,7 @@ fun bindStatus(statusImageView: ImageView, status: AmphibianApiStatus?) {
         AmphibianApiStatus.DONE -> {
             statusImageView.visibility = View.GONE
         }
-        AmphibianApiStatus.ERROR -> {
+        else -> {
             statusImageView.visibility = View.VISIBLE
             statusImageView.setImageResource(R.drawable.ic_connection_error)
         }
