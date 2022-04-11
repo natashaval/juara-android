@@ -50,6 +50,9 @@ Collect 16 badges + 3 extra badges from this [list](https://docs.google.com/spre
         * [Get and display data from the internet](https://developer.android.com/courses/pathways/android-basics-kotlin-unit-4-pathway-2)  
           ✅ Get and display data from the internet
         * Project: Amphibians App 🐸
+    * BusActivity
+        * [Introduction to SQL, Room, and Flow](https://developer.android.com/courses/pathways/android-basics-kotlin-unit-5-pathway-1)  
+          ✅ Introduction to SQL, Room, and Flow
 
 ### Tech
 
