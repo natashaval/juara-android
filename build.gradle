@@ -4,7 +4,9 @@ plugins {
     id 'com.android.library' version '7.1.1' apply false
     id 'org.jetbrains.kotlin.android' version '1.6.10' apply false
     // https://stackoverflow.com/questions/70938297/how-to-add-classpath-in-new-version-of-android-studio
-    id 'androidx.navigation.safeargs' version '2.4.1' apply false
+    // https://developer.android.com/guide/navigation/navigation-pass-data
+    // https://stackoverflow.com/questions/71002479/android-studio-bumblebee-navigation-cant-access-fragmentdirections-for-action
+    id 'androidx.navigation.safeargs.kotlin' version '2.4.2' apply false
 }
 
 task clean(type: Delete) {
