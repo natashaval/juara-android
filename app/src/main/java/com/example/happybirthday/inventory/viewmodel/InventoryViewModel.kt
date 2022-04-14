@@ -1,14 +1,15 @@
 package com.example.happybirthday.inventory.viewmodel
 
-import androidx.lifecycle.ViewModel
-import androidx.lifecycle.ViewModelProvider
-import androidx.lifecycle.viewModelScope
+import androidx.lifecycle.*
 import com.example.happybirthday.inventory.data.Item
 import com.example.happybirthday.inventory.data.ItemDao
 import kotlinx.coroutines.launch
 import java.lang.IllegalArgumentException
 
 class InventoryViewModel(private val itemDao: ItemDao) : ViewModel() {
+
+    val allItems: LiveData<List<Item>> = itemDao.getItems().asLiveData()
+
     private fun insertItem(item: Item) {
         // The ViewModelScope is an extension property to the ViewModel class that automatically cancels its child coroutines when the ViewModel is destroyed.
         viewModelScope.launch {
@@ -34,6 +35,10 @@ class InventoryViewModel(private val itemDao: ItemDao) : ViewModel() {
             return false
         }
         return true
+    }
+
+    fun retrieveItem(id: Int): LiveData<Item> {
+        return itemDao.getItem(id).asLiveData()
     }
 }
 
