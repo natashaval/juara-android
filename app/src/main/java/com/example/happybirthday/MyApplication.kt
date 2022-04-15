@@ -2,6 +2,7 @@ package com.example.happybirthday
 
 import android.app.Application
 import com.example.happybirthday.busschedule.database.BusAppDatabase
+import com.example.happybirthday.forage.data.ForageDatabase
 import com.example.happybirthday.inventory.data.ItemRoomDatabase
 import timber.log.Timber
 
@@ -10,6 +11,7 @@ class MyApplication: Application() {
     val itemDatabase: ItemRoomDatabase by lazy { ItemRoomDatabase.getDatabase(this) }
 
     // TODO: provide a ForageDatabase value by lazy here
+    val forageDatabase: ForageDatabase by lazy { ForageDatabase.getDatabase(this) }
 
     /**
      * onCreate is called before the first screen is shown to the user.

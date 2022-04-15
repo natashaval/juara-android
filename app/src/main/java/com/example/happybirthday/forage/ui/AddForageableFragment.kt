@@ -9,10 +9,12 @@ import android.widget.TextView
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
+import com.example.happybirthday.MyApplication
 import com.example.happybirthday.R
 import com.example.happybirthday.databinding.FragmentAddForageableBinding
 import com.example.happybirthday.forage.model.Forageable
 import com.example.happybirthday.forage.viewmodel.ForageableViewModel
+import com.example.happybirthday.forage.viewmodel.ForageableViewModelFactory
 
 /**
  * A fragment to enter data for a new [Forageable] or edit data for an existing [Forageable].
@@ -33,7 +35,9 @@ class AddForageableFragment : Fragment() {
     // TODO: Refactor the creation of the view model to take an instance of
     //  ForageableViewModelFactory. The factory should take an instance of the Database retrieved
     //  from BaseApplication
-    private val viewModel: ForageableViewModel by activityViewModels()
+    private val viewModel: ForageableViewModel by activityViewModels {
+        ForageableViewModelFactory((activity?.application as MyApplication).forageDatabase.forageableDao())
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -52,6 +56,10 @@ class AddForageableFragment : Fragment() {
 
             // TODO: Observe a Forageable that is retrieved by id, set the forageable variable,
             //  and call the bindForageable method
+            viewModel.getForageable(id).observe(viewLifecycleOwner) {
+                this.forageable = it
+                bindForageable(it)
+            }
 
             binding.deleteBtn.visibility = View.VISIBLE
             binding.deleteBtn.setOnClickListener {
