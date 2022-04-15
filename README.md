@@ -50,9 +50,13 @@ Collect 16 badges + 3 extra badges from this [list](https://docs.google.com/spre
         * [Get and display data from the internet](https://developer.android.com/courses/pathways/android-basics-kotlin-unit-4-pathway-2)  
           ✅ Get and display data from the internet
         * Project: Amphibians App 🐸
+5. Unit 5: Data Persistence (2 badges)
     * BusActivity
         * [Introduction to SQL, Room, and Flow](https://developer.android.com/courses/pathways/android-basics-kotlin-unit-5-pathway-1)  
           ✅ Introduction to SQL, Room, and Flow
+    * DevByteActivity, WordActivity
+        * [Save changes in your app](https://developer.android.com/courses/pathways/android-basics-kotlin-unit-5-pathway-2)
+    
 
 ### Tech
 
@@ -67,3 +71,4 @@ Collect 16 badges + 3 extra badges from this [list](https://docs.google.com/spre
 9. Coroutines
 10. Room database and Flow
 11. Repository pattern
+12. Preferences DataStore

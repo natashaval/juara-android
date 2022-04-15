@@ -4,12 +4,16 @@ import android.os.Bundle
 import android.view.*
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.asLiveData
+import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.happybirthday.R
 import com.example.happybirthday.databinding.FragmentLetterListBinding
 import com.example.happybirthday.words.adapter.LetterAdapter
+import com.example.happybirthday.words.data.SettingsDataStore
+import kotlinx.coroutines.launch
 
 class LetterListFragment : Fragment() {
     // The type should be FragmentLetterListBinding? and it should have an initial value of null.
@@ -20,6 +24,7 @@ class LetterListFragment : Fragment() {
 
     private lateinit var recyclerView: RecyclerView
     private var isLinearLayoutManager = true
+    private lateinit var settingsDataStore: SettingsDataStore
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -38,7 +43,13 @@ class LetterListFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         recyclerView = binding.recyclerView
-        chooseLayout()
+        // Initialize SettingsDataStore
+        settingsDataStore = SettingsDataStore(requireContext())
+        settingsDataStore.preferenceFlow.asLiveData().observe(viewLifecycleOwner) { value ->
+            isLinearLayoutManager = value
+            chooseLayout()
+            activity?.invalidateOptionsMenu()
+        }
     }
 
     override fun onDestroyView() {
@@ -57,10 +68,10 @@ class LetterListFragment : Fragment() {
 
     private fun chooseLayout() {
         with(binding.recyclerView) {
-            if (isLinearLayoutManager) {
-                layoutManager = LinearLayoutManager(context)
+            layoutManager = if (isLinearLayoutManager) {
+                LinearLayoutManager(context)
             } else {
-                layoutManager = GridLayoutManager(context, 4)
+                GridLayoutManager(context, 4)
             }
             adapter = LetterAdapter()
         }
@@ -83,6 +94,12 @@ class LetterListFragment : Fragment() {
             R.id.action_switch_layout -> {
                 // Sets isLinearLayoutManager (a Boolean) to the opposite value
                 isLinearLayoutManager = !isLinearLayoutManager
+
+                // Launch a coroutine and write the layout setting in the preference Datastore
+                lifecycleScope.launch {
+                    settingsDataStore.saveLayoutToPreferencesStore(isLinearLayoutManager, requireContext())
+                }
+
                 // Sets layout and icon
                 chooseLayout()
                 setIcon(item)
