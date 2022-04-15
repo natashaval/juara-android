@@ -66,3 +66,4 @@ Collect 16 badges + 3 extra badges from this [list](https://docs.google.com/spre
 8. ViewModel and LiveData
 9. Coroutines
 10. Room database and Flow
+11. Repository pattern
