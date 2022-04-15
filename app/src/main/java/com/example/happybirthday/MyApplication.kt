@@ -9,6 +9,8 @@ class MyApplication: Application() {
     val database: BusAppDatabase by lazy { BusAppDatabase.getDatabase(this) }
     val itemDatabase: ItemRoomDatabase by lazy { ItemRoomDatabase.getDatabase(this) }
 
+    // TODO: provide a ForageDatabase value by lazy here
+
     /**
      * onCreate is called before the first screen is shown to the user.
      *
