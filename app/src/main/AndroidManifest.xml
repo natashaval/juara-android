@@ -13,6 +13,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HappyBirthday">
         <activity
+            android:name=".devbyteviewer.ui.DevByteActivity"
+            android:label="@string/devbyte_app_name"
+            android:exported="false" />
+        <activity
             android:name=".inventory.ui.InventoryActivity"
             android:exported="false"
             android:label="@string/inventory_app_name"
