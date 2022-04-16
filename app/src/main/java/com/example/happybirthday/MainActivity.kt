@@ -21,6 +21,7 @@ import com.example.happybirthday.inventory.ui.InventoryActivity
 import com.example.happybirthday.lunchtray.ui.LunchActivity
 import com.example.happybirthday.mars.ui.MarsActivity
 import com.example.happybirthday.unscramble.ui.UnscrambleActivity
+import com.example.happybirthday.waterme.ui.WaterActivity
 import com.example.happybirthday.words.view.WordActivity
 
 class MainActivity : AppCompatActivity() {
@@ -63,6 +64,7 @@ fun bindActivity(button: Button, appName: String) {
         resources.getString(R.string.devbyte_app_name) -> DevByteActivity::class.java
         resources.getString(R.string.forage_app_name) -> ForageableActivity::class.java
         resources.getString(R.string.blur_app_name) -> BlurActivity::class.java
+        resources.getString(R.string.water_app_name) -> WaterActivity::class.java
         else -> MainActivity::class.java
     }
 

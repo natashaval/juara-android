@@ -90,4 +90,5 @@ dependencies {
     implementation 'androidx.datastore:datastore-preferences:1.0.0'
     // work manager
     implementation 'androidx.work:work-runtime-ktx:2.7.1'
+    implementation 'androidx.test.uiautomator:uiautomator:2.2.0'
 }

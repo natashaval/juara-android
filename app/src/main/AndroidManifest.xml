@@ -13,10 +13,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HappyBirthday">
         <activity
-            android:name=".background.ui.BlurActivity"
-            android:label="@string/blur_app_name"
-            android:theme="@style/Theme.Blur"
+            android:name=".waterme.ui.WaterActivity"
+            android:label="@string/water_app_name"
             android:exported="false" />
+        <activity
+            android:name=".background.ui.BlurActivity"
+            android:exported="false"
+            android:label="@string/blur_app_name"
+            android:theme="@style/Theme.Blur" />
         <activity
             android:name=".forage.ui.ForageableActivity"
             android:exported="false"
