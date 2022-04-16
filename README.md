@@ -61,7 +61,8 @@ Collect 16 badges + 3 extra badges from this [list](https://docs.google.com/spre
 6. Unit 6: WorkManager (1 badge)
     * BlurActivity
         * [Schedule tasks with WorkManager](https://developer.android.com/courses/pathways/android-basics-kotlin-unit-6-pathway-1)
-    
+          ✅ Schedule tasks with WorkManager
+        * Project: WaterMe App 💧
 
 ### Tech
 
@@ -77,3 +78,4 @@ Collect 16 badges + 3 extra badges from this [list](https://docs.google.com/spre
 10. Room database and Flow
 11. Repository pattern
 12. Preferences DataStore
+13. Work Manager

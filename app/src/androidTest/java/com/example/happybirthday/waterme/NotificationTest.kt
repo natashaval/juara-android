@@ -52,9 +52,9 @@ class NotificationTest {
     fun notification_click() {
         val notification = uiDevice.findObject(UiSelector().textContains("Carrot"))
         notification.click()
-        uiDevice.wait(Until.hasObject(By.pkg("com.example.waterme")
+        uiDevice.wait(Until.hasObject(By.pkg("com.example.happybirthday")
             .depth(0)), 1000)
-        val pkg = uiDevice.findObject(UiSelector().packageName("com.example.waterme"))
+        val pkg = uiDevice.findObject(UiSelector().packageName("com.example.happybirthday"))
             .exists()
         assertTrue("Could not find package", pkg)
     }
