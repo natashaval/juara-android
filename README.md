@@ -54,8 +54,13 @@ Collect 16 badges + 3 extra badges from this [list](https://docs.google.com/spre
     * BusActivity
         * [Introduction to SQL, Room, and Flow](https://developer.android.com/courses/pathways/android-basics-kotlin-unit-5-pathway-1)  
           ✅ Introduction to SQL, Room, and Flow
-    * DevByteActivity, WordActivity
-        * [Save changes in your app](https://developer.android.com/courses/pathways/android-basics-kotlin-unit-5-pathway-2)
+    * DevByteActivity, WordActivity, ForageActivity
+        * [Save changes in your app](https://developer.android.com/courses/pathways/android-basics-kotlin-unit-5-pathway-2)  
+          ✅ Room for data persistence
+        * Project: Forage App 🍄
+6. Unit 6: WorkManager (1 badge)
+    * BlurActivity
+        * [Schedule tasks with WorkManager](https://developer.android.com/courses/pathways/android-basics-kotlin-unit-6-pathway-1)
     
 
 ### Tech

@@ -13,10 +13,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HappyBirthday">
         <activity
-            android:name=".forage.ui.ForageableActivity"
-            android:label="@string/forage_app_name"
-            android:theme="@style/Theme.Forage.NoActionBar"
+            android:name=".background.ui.BlurActivity"
+            android:label="@string/blur_app_name"
+            android:theme="@style/Theme.Blur"
             android:exported="false" />
+        <activity
+            android:name=".forage.ui.ForageableActivity"
+            android:exported="false"
+            android:label="@string/forage_app_name"
+            android:theme="@style/Theme.Forage.NoActionBar" />
         <activity
             android:name=".devbyteviewer.ui.DevByteActivity"
             android:exported="false"

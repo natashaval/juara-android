@@ -10,6 +10,7 @@ import androidx.databinding.BindingAdapter
 import androidx.databinding.DataBindingUtil
 import com.example.happybirthday.affirmation.view.AffirmationActivity
 import com.example.happybirthday.amphibians.ui.AmphibianActivity
+import com.example.happybirthday.background.ui.BlurActivity
 import com.example.happybirthday.busschedule.ui.BusActivity
 import com.example.happybirthday.cupcake.CupcakeActivity
 import com.example.happybirthday.databinding.ActivityMainBinding
@@ -61,6 +62,7 @@ fun bindActivity(button: Button, appName: String) {
         resources.getString(R.string.inventory_app_name) -> InventoryActivity::class.java
         resources.getString(R.string.devbyte_app_name) -> DevByteActivity::class.java
         resources.getString(R.string.forage_app_name) -> ForageableActivity::class.java
+        resources.getString(R.string.blur_app_name) -> BlurActivity::class.java
         else -> MainActivity::class.java
     }
 

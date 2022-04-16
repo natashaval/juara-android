@@ -18,6 +18,8 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         // This enables you to use vector drawables on versions of the platform less than API 21, versus converting to PNGs when the project is built.
         vectorDrawables.useSupportLibrary = true
+        renderscriptTargetApi 21
+        renderscriptSupportModeEnabled true
     }
 
     buildTypes {
@@ -86,4 +88,6 @@ dependencies {
     kapt 'com.github.bumptech.glide:compiler:4.13.1'
     // preferences store
     implementation 'androidx.datastore:datastore-preferences:1.0.0'
+    // work manager
+    implementation 'androidx.work:work-runtime-ktx:2.7.1'
 }
