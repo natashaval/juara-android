@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.happybirthday">
+    package="com.example.happybirthday" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:name=".MyApplication"
@@ -9,17 +11,33 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_lemonade_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.HappyBirthday">
+        android:theme="@style/Theme.HappyBirthday" >
         <activity
-            android:name=".MainActivity"
-            android:exported="false"
-            android:label="@string/title_activity_main"
-            android:theme="@style/Theme.HappyBirthday">
+            android:name=".AndroidActivity"
+            android:exported="true"
+            android:label="@string/juara_android"
+            android:theme="@style/Theme.HappyBirthday" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:label="@string/title_activity_main"
+            android:theme="@style/Theme.HappyBirthday" />
+        <activity
+            android:name=".compose.view.MainActivity"
+            android:exported="false"
+            android:label="@string/title_activity_main"
+            android:theme="@style/Theme.HappyBirthday" />
+        <activity
+            android:name=".compose.view.BirthdayActivity"
+            android:exported="false"
+            android:label="@string/title_activity_main"
+            android:theme="@style/Theme.HappyBirthday" >
         </activity>
         <activity
             android:name=".waterme.ui.WaterActivity"
@@ -84,21 +102,21 @@
             android:theme="@style/Theme.Words" />
         <activity
             android:name=".dogglers.view.VerticalListActivity"
-            android:label="@string/doggler_app_name">
+            android:label="@string/doggler_app_name" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".dogglers.view.DogglersActivity" />
         </activity>
         <activity
             android:name=".dogglers.view.HorizontalListActivity"
-            android:label="@string/doggler_app_name">
+            android:label="@string/doggler_app_name" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".dogglers.view.DogglersActivity" />
         </activity>
         <activity
             android:name=".dogglers.view.GridListActivity"
-            android:label="@string/doggler_app_name">
+            android:label="@string/doggler_app_name" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".dogglers.view.DogglersActivity" />
@@ -132,7 +150,5 @@
             android:name=".BirthdayActivity"
             android:exported="false" />
     </application>
-
-    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>

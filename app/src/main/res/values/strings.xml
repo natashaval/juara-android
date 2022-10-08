@@ -3,6 +3,7 @@
         <item quantity="one">%d cupcake</item>
         <item quantity="other">%d cupcakes</item>
     </plurals>
+    <string name="juara_android">Juara Android</string>
     <string name="app_name">HappyBirthday</string>
     <string name="happy_birthday_text">Happy Birthday, Sam!</string>
     <string name="signature_text">From Emma.</string>

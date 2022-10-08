@@ -1,4 +1,4 @@
-package com.compose.happybirthday.ui.theme
+package com.example.happybirthday.compose.view.ui.theme
 
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Shapes
