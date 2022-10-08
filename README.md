@@ -1,12 +1,28 @@
 # juara-android
-
-Juara-Android Indonesia 2022 [link](https://gdg.community.dev/events/details/google-gdg-jakarta-presents-info-session-juaraandroid-season-1/)
-Collect 16 badges + 3 extra badges from this [list](https://docs.google.com/spreadsheets/d/1wTOp7craI3UA1nBemw6HiSvKEZLzzW7lM0iT55M31xo/edit#gid=0)
 **Google Developer Profile**: [natashaval](https://developers.google.com/profile/u/natashaval)
+* [Juara Android Season 2: Compose Camp](#juara-android-season-2-com.compose-camp)
+* [Juara Android Season 1: Android Development](#juara-android-season-1-android-development)
+
+## Juara Android Season 2: Compose Camp
+Juara-Android Indonesia 2022 Season 2 [link](https://gdg.community.dev/events/details/google-gdg-jakarta-presents-juaraandroid-season-2-onboarding/)  
+Collect 12 badges [for beginners](https://developer.android.com/courses/android-basics-com.compose/course) + 5 badges [for experienced](https://developer.android.com/courses/jetpack-com.compose/course)
+
+## Android Basics with Compose
+**[Android Basics with Compose](https://developer.android.com/courses/android-basics-com.compose/course)**  
+`com.compose.happybirthday`
+1. Unit 1: Your first Android app (3 badges)
+2. Unit 2: Building app UI (3 badges)
+3. Unit 3: Display lists and use Material Design (3 badges)
+4. Unit 4: Navigation and app architecture (3 badges)
+
+## Juara Android Season 1: Android Development
+Juara-Android Indonesia 2022 Season 1 [link](https://gdg.community.dev/events/details/google-gdg-jakarta-presents-info-session-juaraandroid-season-1/)  
+Collect 16 badges + 3 extra badges from this [list](https://docs.google.com/spreadsheets/d/1wTOp7craI3UA1nBemw6HiSvKEZLzzW7lM0iT55M31xo/edit#gid=0)  
+
 
 ## Android Basics Codelabs
 **[Android Basics in Kotlin](https://developer.android.com/courses/android-basics-kotlin/course)**  
-<br/>
+`com.example.happybirthday`
 1. Unit 1: Kotlin basics (4 badges)
     * MainActivity
         * [Introduction to Kotlin](https://developer.android.com/courses/pathways/android-basics-kotlin-one)  

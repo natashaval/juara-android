@@ -1,18 +1,22 @@
 <resources>
+    <plurals name="cupcakes">
+        <item quantity="one">%d cupcake</item>
+        <item quantity="other">%d cupcakes</item>
+    </plurals>
     <string name="app_name">HappyBirthday</string>
     <string name="happy_birthday_text">Happy Birthday, Sam!</string>
     <string name="signature_text">From Emma.</string>
-    <string name="roll">Roll</string>
 
     <!--Lemonade-->
+    <string name="roll">Roll</string>
     <string name="lemonade_app_name">Lemonade</string>
     <string name="lemon_select">Click to select a lemon!</string>
     <string name="lemon_squeeze">Click to juice the lemon!</string>
     <string name="lemon_drink">Click to drink your lemonade!</string>
     <string name="lemon_empty_glass">Click to start again!</string>
-    <string name="squeeze_count">Squeeze count: %1$d, keep squeezing!</string>
 
     <!--Tip Calculator-->
+    <string name="squeeze_count">Squeeze count: %1$d, keep squeezing!</string>
     <string name="tip_app_name">Tip Calculator</string>
     <string name="cost_of_service">Cost of Service</string>
     <string name="how_was_the_service">How was the service?</string>
@@ -21,9 +25,9 @@
     <string name="ok_service">Okay (15%)</string>
     <string name="round_up_tip">Round up tip?</string>
     <string name="calculate">Calculate</string>
-    <string name="tip_amount">Tip Amount: %s</string>
 
     <!--Affirmation-->
+    <string name="tip_amount">Tip Amount: %s</string>
     <string name="affirmation_app_name">Affirmation</string>
     <string name="affirmation1">I am strong.</string>
     <string name="affirmation2">I believe in myself.</string>
@@ -34,32 +38,32 @@
     <string name="affirmation7">New opportunities await me at every turn.</string>
     <string name="affirmation8">I have the courage to follow my heart.</string>
     <string name="affirmation9">Things will unfold at precisely the right time.</string>
-    <string name="affirmation10">I will be present in all the moments that this day brings.</string>
 
     <!--Dogglers-->
+    <string name="affirmation10">I will be present in all the moments that this day brings.</string>
     <string name="doggler_app_name">Dogglers</string>
     <string name="dog_age">Age: %1$s</string>
     <string name="dog_hobbies">Hobbies: %1$s</string>
     <string name="vertical">Vertical</string>
     <string name="horizontal">Horizontal</string>
-    <string name="grid">Grid</string>
 
     <!--Words-->
+    <string name="grid">Grid</string>
     <string name="words_app_name">Words</string>
     <string name="detail_prefix">Words That Start With</string>
     <string name="action_switch_layout">Switch Layout</string>
     <string name="look_up_word">Look up word in a Browser Search</string>
     <string name="look_up_words">Show Stored Words</string>
-    <string name="word_list_fragment_label">Words That Start With {letter}</string>
 
     <!--Dessert Clicker-->
+    <string name="word_list_fragment_label">Words That Start With {letter}</string>
     <string name="dessert_app_name">Dessert Clicker</string>
     <string name="dessert_sold">Desserts Sold</string>
     <string name="share_text">I\'ve clicked %1$d Desserts for a total of %2$d$ #AndroidDessertClicker</string>
     <string name="share">Share</string>
-    <string name="sharing_not_available">Sharing Not Available</string>
 
     <!--Unscramble-->
+    <string name="sharing_not_available">Sharing Not Available</string>
     <string name="unscramble_app_name">Unscramble</string>
     <string name="instructions">Unscramble the word using all the letters.</string>
     <string name="skip">Skip</string>
@@ -71,9 +75,9 @@
     <string name="you_scored">"You scored: %d"</string>
     <string name="exit">Exit</string>
     <string name="play_again">Play Again</string>
-    <string name="try_again">Try again!</string>
 
     <!--Cupcake-->
+    <string name="try_again">Try again!</string>
     <string name="cupcake_app_name">Cupcake</string>
     <string name="order_cupcakes">Order Cupcakes</string>
     <string name="one_cupcake">One Cupcake</string>
@@ -99,10 +103,6 @@
     <string name="new_cupcake_order">New Cupcake Order</string>
     <string name="order_details">Quantity: %1$s \n Flavor: %2$s \nPickup date: %3$s \n
         Total: %4$s \n\n Thank you!</string>
-    <plurals name="cupcakes">
-        <item quantity="one">%d cupcake</item>
-        <item quantity="other">%d cupcakes</item>
-    </plurals>
 
     <!--Lunch Tray-->
     <string name="lunch_app_name">Lunch Tray</string>
@@ -188,4 +188,5 @@
     <string name="channel_name">water_channel</string>
     <string name="channel_description">water_reminder</string>
     <string name="water_reminder">Remind me to water in…</string>
+    <string name="title_activity_main">MainActivity</string>
 </resources>
