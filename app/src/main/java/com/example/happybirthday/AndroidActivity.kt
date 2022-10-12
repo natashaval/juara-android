@@ -18,7 +18,7 @@ class AndroidActivity : AppCompatActivity() {
         startActivity(Intent(this@AndroidActivity, MainActivity::class.java))
       }
       btSeason2.setOnClickListener {
-        startActivity(Intent(this@AndroidActivity, com.example.happybirthday.compose.view.MainActivity::class.java))
+        startActivity(Intent(this@AndroidActivity, com.example.happybirthday.compose.view.BirthdayActivity::class.java))
       }
     }
   }
