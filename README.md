@@ -10,7 +10,12 @@ Collect 12 badges [for beginners](https://developer.android.com/courses/android-
 ## Android Basics with Compose
 **[Android Basics with Compose](https://developer.android.com/courses/android-basics-com.compose/course)**  
 `com.compose.happybirthday`
-1. Unit 1: Your first Android app (3 badges)
+1. Unit 1: Your first Android app (3 badges) [link](https://developer.android.com/courses/android-basics-compose/unit-1)
+   * MainActivity
+     * 
+   * BirthdayActivity
+     * [Build a basic layout](https://developer.android.com/courses/pathways/android-basics-compose-unit-1-pathway-3)
+     
 2. Unit 2: Building app UI (3 badges)
 3. Unit 3: Display lists and use Material Design (3 badges)
 4. Unit 4: Navigation and app architecture (3 badges)
