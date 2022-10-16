@@ -11,6 +11,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HappyBirthday">
         <activity
+            android:name=".DiceActivity"
+            android:exported="false"
+            android:label="@string/title_activity_dice"
+            android:theme="@style/Theme.HappyBirthday" />
+        <activity
             android:name=".QuadrantActivity"
             android:exported="false"
             android:label="@string/title_activity_quadrant"
@@ -154,9 +159,6 @@
             android:theme="@style/Theme.Lemonade" />
         <activity
             android:name=".DebugActivity"
-            android:exported="false" />
-        <activity
-            android:name=".DiceActivity"
             android:exported="false" />
         <activity
             android:name=".BirthdayActivity"

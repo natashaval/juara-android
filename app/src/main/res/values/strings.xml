@@ -210,4 +210,5 @@
     <string name="quadrant_row_body">A layout composable that places its children in a horizontal sequence.</string>
     <string name="quadrant_column_title">Column composable</string>
     <string name="quadrant_column_body">A layout composable that places its children in a vertical sequence.</string>
+    <string name="title_activity_dice">DiceActivity</string>
 </resources>

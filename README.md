@@ -8,18 +8,20 @@ Juara-Android Indonesia 2022 Season 2 [link](https://gdg.community.dev/events/de
 Collect 12 badges [for beginners](https://developer.android.com/courses/android-basics-com.compose/course) + 5 badges [for experienced](https://developer.android.com/courses/jetpack-com.compose/course)
 
 ## Android Basics with Compose
-**[Android Basics with Compose](https://developer.android.com/courses/android-basics-com.compose/course)**  
+**<img src="https://developer.android.com/courses/android-basics-compose/images/hero-assets/unit-logo.svg" width="50"/>[Android Basics with Compose](https://developer.android.com/courses/android-basics-com.compose/course)**  
 `com.compose.happybirthday`
-1. <img src="https://developer.android.com/courses/android-basics-compose/images/hero-assets/unit-logo.svg" width="50"/>[Unit 1: Your first Android app](https://developer.android.com/courses/android-basics-compose/unit-1) (3 badges)
+1. [Unit 1: Your first Android app](https://developer.android.com/courses/android-basics-compose/unit-1) (3 badges)
    * MainActivity
      * <img src="https://developers.google.com/profile/badges/playlists/android/android-basics-compose-unit-1-pathway-1/badge.svg" width="50" />[Introduction to programming in Kotlin](https://developer.android.com/courses/pathways/android-basics-compose-unit-1-pathway-1)
      * <img src="https://developers.google.com/profile/badges/playlists/android/android-basics-compose-unit-1-pathway-2/badge.svg" width="50" />[Setup Android Studio](https://developer.android.com/courses/pathways/android-basics-compose-unit-1-pathway-2)
    * BirthdayActivity, LearnActivity, TaskActivity, QuadrantActivity
-     * <img src="https://developers.google.com/profile/badges/playlists/android/android-basics-compose-unit-1-pathway-3/badge.svg" width="50"/>[Build a basic layout](https://developer.android.com/courses/pathways/android-basics-compose-unit-1-pathway-3)  
-       
-     
-2. Unit 2: Building app UI (3 badges)
+     * <img src="https://developers.google.com/profile/badges/playlists/android/android-basics-compose-unit-1-pathway-3/badge.svg" width="50"/>[Build a basic layout](https://developer.android.com/courses/pathways/android-basics-compose-unit-1-pathway-3)
+2. [Unit 2: Building app UI](https://developer.android.com/courses/android-basics-compose/unit-2) (3 badges)
 3. Unit 3: Display lists and use Material Design (3 badges)
+   * MainActivity
+     * <img src="https://developers.google.com/profile/badges/playlists/android/android-basics-compose-unit-2-pathway-1/badge.svg" width="50" />[Kotlin fundamentals](https://developer.android.com/courses/pathways/android-basics-compose-unit-2-pathway-1)
+   * DiceActivity
+     * 
 4. Unit 4: Navigation and app architecture (3 badges)
 
 ## Juara Android Season 1: Android Development
