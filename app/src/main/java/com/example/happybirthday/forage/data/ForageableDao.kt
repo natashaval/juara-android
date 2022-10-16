@@ -25,7 +25,7 @@ interface ForageableDao {
 
     // TODO: implement a method to update a Forageable that is already in the database
     @Update
-    suspend fun update(forageable: Forageable)
+    suspend fun update(forageable: Forageable): Int
 
     // TODO: implement a method to delete a Forageable from the database.
     @Delete

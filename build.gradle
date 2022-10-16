@@ -1,12 +1,12 @@
 buildscript {
     ext {
-        compose_version = '1.2.0-alpha07'
+        compose_version = '1.3.0-rc01'
     }
 }// Top-level build file where you can add configuration options common to all sub-projects/modules.
 plugins {
-    id 'com.android.application' version '7.1.1' apply false
-    id 'com.android.library' version '7.1.1' apply false
-    id 'org.jetbrains.kotlin.android' version '1.6.10' apply false
+    id 'com.android.application' version '7.2.2' apply false
+    id 'com.android.library' version '7.2.2' apply false
+    id 'org.jetbrains.kotlin.android' version '1.7.10' apply false
     // https://stackoverflow.com/questions/70938297/how-to-add-classpath-in-new-version-of-android-studio
     // https://developer.android.com/guide/navigation/navigation-pass-data
     // https://stackoverflow.com/questions/71002479/android-studio-bumblebee-navigation-cant-access-fragmentdirections-for-action
