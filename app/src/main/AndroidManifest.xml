@@ -11,6 +11,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HappyBirthday">
         <activity
+            android:name=".LemonadeActivity"
+            android:exported="false"
+            android:label="@string/title_activity_lemonade"
+            android:theme="@style/Theme.HappyBirthday" />
+        <activity
             android:name=".DiceActivity"
             android:exported="false"
             android:label="@string/title_activity_dice"
@@ -152,11 +157,6 @@
             android:exported="false"
             android:label="@string/tip_app_name"
             android:theme="@style/Theme.TipTime" />
-        <activity
-            android:name=".LemonadeActivity"
-            android:exported="false"
-            android:label="@string/lemonade_app_name"
-            android:theme="@style/Theme.Lemonade" />
         <activity
             android:name=".DebugActivity"
             android:exported="false" />
