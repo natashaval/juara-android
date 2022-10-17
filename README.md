@@ -18,9 +18,11 @@ Collect 12 badges [for beginners](https://developer.android.com/courses/android-
      * <img src="https://developers.google.com/profile/badges/playlists/android/android-basics-compose-unit-1-pathway-3/badge.svg" width="50"/>[Build a basic layout](https://developer.android.com/courses/pathways/android-basics-compose-unit-1-pathway-3)
 2. [Unit 2: Building app UI](https://developer.android.com/courses/android-basics-compose/unit-2) (3 badges)
    * MainActivity
-       * <img src="https://developers.google.com/profile/badges/playlists/android/android-basics-compose-unit-2-pathway-1/badge.svg" width="50" />[Kotlin fundamentals](https://developer.android.com/courses/pathways/android-basics-compose-unit-2-pathway-1)
+     * <img src="https://developers.google.com/profile/badges/playlists/android/android-basics-compose-unit-2-pathway-1/badge.svg" width="50" />[Kotlin fundamentals](https://developer.android.com/courses/pathways/android-basics-compose-unit-2-pathway-1)
    * DiceActivity, LemonadeActivity
-       * <img src="https://developers.google.com/profile/badges/playlists/android/android-basics-compose-unit-2-pathway-2/badge.svg" width="50" />[Add a button to an app](https://developer.android.com/courses/pathways/android-basics-compose-unit-2-pathway-2)
+     * <img src="https://developers.google.com/profile/badges/playlists/android/android-basics-compose-unit-2-pathway-2/badge.svg" width="50" />[Add a button to an app](https://developer.android.com/courses/pathways/android-basics-compose-unit-2-pathway-2)
+   * TipActivity
+     * <img src="https://developers.google.com/profile/badges/playlists/android/android-basics-compose-unit-2-pathway-3/badge.svg" width="50" />[Interacting with UI and state](https://developer.android.com/courses/pathways/android-basics-compose-unit-2-pathway-3)
 3. Unit 3: Display lists and use Material Design (3 badges)
 4. Unit 4: Navigation and app architecture (3 badges)
 
