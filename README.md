@@ -24,6 +24,9 @@ Collect 12 badges [for beginners](https://developer.android.com/courses/android-
    * TipActivity
      * <img src="https://developers.google.com/profile/badges/playlists/android/android-basics-compose-unit-2-pathway-3/badge.svg" width="50" />[Interacting with UI and state](https://developer.android.com/courses/pathways/android-basics-compose-unit-2-pathway-3)
 3. Unit 3: Display lists and use Material Design (3 badges)
+   * MainActivity
+     * <img src="https://developers.google.com/profile/badges/playlists/android/android-basics-compose-unit-3-pathway-1/badge.svg" width="50" />[More Kotlin fundamentals](https://developer.android.com/courses/pathways/android-basics-compose-unit-3-pathway-1)
+   * 
 4. Unit 4: Navigation and app architecture (3 badges)
 
 ## Juara Android Season 1: Android Development

@@ -225,4 +225,5 @@
     <string name="title_activity_dice">DiceActivity</string>
     <string name="title_activity_lemonade">LemonadeActivity</string>
     <string name="title_activity_tip">TipActivity</string>
+    <string name="title_activity_affirmation">AffirmationActivity</string>
 </resources>
