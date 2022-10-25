@@ -14,7 +14,7 @@
             android:name=".compose.view.WoofActivity"
             android:exported="false"
             android:label="@string/woof_app_name"
-            android:theme="@style/Theme.HappyBirthday" />
+            android:theme="@style/Theme.Woof" />
         <activity
             android:name=".compose.view.TopicActivity"
             android:exported="false"
