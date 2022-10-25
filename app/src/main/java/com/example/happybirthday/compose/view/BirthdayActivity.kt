@@ -18,7 +18,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.happybirthday.R
-import com.example.happybirthday.compose.ui.theme.HappyBirthdayTheme
+import com.example.happybirthday.compose.view.ui.theme.HappyBirthdayTheme
 
 class BirthdayActivity : ComponentActivity() {
   override fun onCreate(savedInstanceState: Bundle?) {

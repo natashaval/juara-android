@@ -11,42 +11,47 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HappyBirthday">
         <activity
-            android:name=".TopicActivity"
+            android:name=".compose.view.WoofActivity"
+            android:exported="false"
+            android:label="@string/woof_app_name"
+            android:theme="@style/Theme.HappyBirthday" />
+        <activity
+            android:name=".compose.view.TopicActivity"
             android:exported="false"
             android:label="@string/title_activity_topic"
             android:theme="@style/Theme.HappyBirthday" />
         <activity
-            android:name=".AffirmationActivity"
+            android:name=".compose.view.AffirmationActivity"
             android:exported="false"
             android:label="@string/title_activity_affirmation"
             android:theme="@style/Theme.HappyBirthday" />
         <activity
-            android:name=".TipActivity"
+            android:name=".compose.view.TipActivity"
             android:exported="false"
             android:label="@string/tip_time"
             android:theme="@style/Theme.HappyBirthday" />
         <activity
-            android:name=".LemonadeActivity"
+            android:name=".compose.view.LemonadeActivity"
             android:exported="false"
             android:label="@string/title_activity_lemonade"
             android:theme="@style/Theme.HappyBirthday" />
         <activity
-            android:name=".DiceActivity"
+            android:name=".compose.view.DiceActivity"
             android:exported="false"
             android:label="@string/title_activity_dice"
             android:theme="@style/Theme.HappyBirthday" />
         <activity
-            android:name=".QuadrantActivity"
+            android:name=".compose.view.QuadrantActivity"
             android:exported="false"
             android:label="@string/title_activity_quadrant"
             android:theme="@style/Theme.HappyBirthday" />
         <activity
-            android:name=".TaskActivity"
+            android:name=".compose.view.TaskActivity"
             android:exported="false"
             android:label="@string/title_activity_task"
             android:theme="@style/Theme.HappyBirthday" />
         <activity
-            android:name=".LearnActivity"
+            android:name=".compose.view.LearnActivity"
             android:exported="false"
             android:label="@string/title_activity_learn"
             android:theme="@style/Theme.HappyBirthday" />

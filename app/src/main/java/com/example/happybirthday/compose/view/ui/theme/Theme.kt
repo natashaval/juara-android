@@ -1,10 +1,9 @@
 package com.example.happybirthday.compose.view.ui.theme
 
 import androidx.compose.foundation.isSystemInDarkTheme
-import androidx.compose.material.MaterialTheme
-import androidx.compose.material.darkColors
-import androidx.compose.material.lightColors
+import androidx.compose.material.*
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.graphics.Color
 
 private val DarkColorPalette = darkColors(
   primary = Purple200,
@@ -30,18 +29,54 @@ private val LightColorPalette = lightColors(
 @Composable
 fun HappyBirthdayTheme(
   darkTheme: Boolean = isSystemInDarkTheme(),
-  content: @Composable () -> Unit
-) {
-  val colors = if (darkTheme) {
+  colors: Colors = if (darkTheme) {
     DarkColorPalette
   } else {
     LightColorPalette
-  }
-
+  },
+  typography: Typography = Typography,
+  shapes: Shapes = Shapes,
+  content: @Composable () -> Unit
+) {
   MaterialTheme(
     colors = colors,
-    typography = Typography,
-    shapes = Shapes,
+    typography = typography,
+    shapes = shapes,
     content = content
   )
+}
+
+private val WoofLightColorPalette = lightColors(
+  background = Green100,
+  surface = Green50,
+  onSurface = Grey900,
+  primary = Grey50,
+  onPrimary = Grey900,
+  secondary = Grey700
+)
+
+private val WoofDarkColorPalette = darkColors(
+  background = Cyan900,
+  surface = Cyan700,
+  onSurface = White,
+  primary = Grey900,
+  onPrimary = White,
+  secondary = Grey100
+)
+
+@Composable
+fun WoofTheme(
+  darkTheme: Boolean = isSystemInDarkTheme(),
+  content: @Composable () -> Unit) {
+  val colors = if (darkTheme) {
+    WoofDarkColorPalette
+  } else {
+    WoofLightColorPalette
+  }
+  HappyBirthdayTheme(
+    darkTheme = darkTheme,
+    colors = colors,
+    typography = WoofTypography,
+    shapes = WoofShapes,
+    content = content)
 }
