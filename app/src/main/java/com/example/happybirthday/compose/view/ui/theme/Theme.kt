@@ -80,3 +80,46 @@ fun WoofTheme(
     shapes = WoofShapes,
     content = content)
 }
+
+val UnscrambleDarkColorPalette = darkColors(
+  primary = Indigo200,
+  primaryVariant = Indigo800,
+  secondary = Light_blue200,
+  onSecondary = Black,
+  onPrimary = Black,
+  secondaryVariant = Light_blue200,
+  onBackground = White,
+  onSurface = White,
+  background = Black,
+  surface = Black,
+  error = Red400
+)
+
+val UnscrambleLightColorPalette = lightColors(
+  primary = Indigo500,
+  primaryVariant = Indigo800,
+  secondary = Light_blue200,
+  onSecondary = Black,
+  onPrimary = White,
+  secondaryVariant = Light_blue700,
+  onBackground = Black,
+  onSurface = Black,
+  background = White,
+  surface = White,
+  error = Red700
+)
+
+@Composable
+fun UnscrambleTheme(darkTheme: Boolean = isSystemInDarkTheme(), content: @Composable () -> Unit) {
+  val colors = if (darkTheme) {
+    UnscrambleDarkColorPalette
+  } else {
+    UnscrambleLightColorPalette
+  }
+  HappyBirthdayTheme(
+    darkTheme = darkTheme,
+    colors = colors,
+    typography = Typography,
+    shapes = Shapes,
+    content = content)
+}

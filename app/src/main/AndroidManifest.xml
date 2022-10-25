@@ -11,6 +11,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HappyBirthday">
         <activity
+            android:name=".UnscrambleActivity"
+            android:exported="false"
+            android:label="@string/title_activity_unscramble"
+            android:theme="@style/Theme.HappyBirthday" />
+        <activity
+            android:name=".DessertActivity"
+            android:exported="false"
+            android:label="@string/title_activity_dessert"
+            android:theme="@style/Theme.HappyBirthday" />
+        <activity
             android:name=".compose.view.WoofActivity"
             android:exported="false"
             android:label="@string/woof_app_name"
@@ -132,11 +142,6 @@
             android:exported="false"
             android:label="@string/unscramble_app_name"
             android:theme="@style/Theme.Unscramble" />
-        <activity
-            android:name=".DessertActivity"
-            android:exported="false"
-            android:label="@string/dessert_app_name"
-            android:theme="@style/Theme.Dessert" />
         <activity
             android:name=".words.view.WordActivity"
             android:exported="false"

@@ -28,9 +28,10 @@ Collect 12 badges [for beginners](https://developer.android.com/courses/android-
      * <img src="https://developers.google.com/profile/badges/playlists/android/android-basics-compose-unit-3-pathway-1/badge.svg" width="50" />[More Kotlin fundamentals](https://developer.android.com/courses/pathways/android-basics-compose-unit-3-pathway-1)
    * TopicActivity
      * <img src="https://developers.google.com/profile/badges/playlists/android/android-basics-compose-unit-3-pathway-2/badge.svg" width="50" />[More Kotlin fundamentals](https://developer.android.com/courses/pathways/android-basics-compose-unit-3-pathway-2)
-   * WoofActivity
-     * 
+   * WoofActivity, _SuperheroActivity_, _DaysActivity_
+     * <img src="https://developers.google.com/profile/badges/playlists/android/android-basics-compose-unit-3-pathway-3/badge.svg" width="50" />[Add theme and animation](https://developer.android.com/courses/pathways/android-basics-compose-unit-3-pathway-3)
 4. Unit 4: Navigation and app architecture (3 badges)
+   * DessertActivity
 
 ## Juara Android Season 1: Android Development
 Juara-Android Indonesia 2022 Season 1 [link](https://gdg.community.dev/events/details/google-gdg-jakarta-presents-info-session-juaraandroid-season-1/)  
