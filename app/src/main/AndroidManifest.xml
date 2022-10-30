@@ -11,6 +11,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HappyBirthday">
         <activity
+            android:name=".BasicCodelabActivity"
+            android:exported="false"
+            android:label="@string/title_activity_basic_codelab"
+            android:theme="@style/Theme.HappyBirthday" />
+        <activity
             android:name=".BasicsActivity"
             android:exported="false"
             android:label="@string/title_activity_basics"
