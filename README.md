@@ -33,6 +33,12 @@ Collect 12 badges [for beginners](https://developer.android.com/courses/android-
 4. Unit 4: Navigation and app architecture (3 badges)
    * DessertActivity
 
+## Jetpack Compose for Android Developers
+**<img src="https://developer.android.com/courses/jetpack-compose/images/course-logo.svg" width="50"/>[Jetpack Compose for Android Developers](https://developer.android.com/courses/jetpack-compose/course)**
+1. BasicsActivity
+   * <img src="https://developers.google.com/profile/badges/playlists/android/jetpack-compose-for-android-developers-1/badge.svg" width="50" />[Compose essentials](https://developer.android.com/courses/pathways/jetpack-compose-for-android-developers-1)
+
+
 ## Juara Android Season 1: Android Development
 Juara-Android Indonesia 2022 Season 1 [link](https://gdg.community.dev/events/details/google-gdg-jakarta-presents-info-session-juaraandroid-season-1/)  
 Collect 16 badges + 3 extra badges from this [list](https://docs.google.com/spreadsheets/d/1wTOp7craI3UA1nBemw6HiSvKEZLzzW7lM0iT55M31xo/edit#gid=0)  

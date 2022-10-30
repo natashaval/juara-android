@@ -271,4 +271,5 @@
     <string name="expand_button_content_description">See more or less information about a dog.</string>
     <string name="title_activity_dessert">DessertActivity</string>
     <string name="title_activity_unscramble">UnscrambleActivity</string>
+    <string name="title_activity_basics">BasicsActivity</string>
 </resources>
