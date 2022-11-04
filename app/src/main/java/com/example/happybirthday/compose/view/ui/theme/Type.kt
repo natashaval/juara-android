@@ -17,6 +17,10 @@ val Typography = Typography(
   )
 )
 
+val Material3Typography = androidx.compose.material3.Typography(
+
+)
+
 val AbrilFatface = FontFamily(
   Font(R.font.abril_fatface_regular)
 )

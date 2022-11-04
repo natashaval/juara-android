@@ -29,3 +29,9 @@ val Light_blue700 = Color(0xFF0288D1)
 val Red700 = Color(0xFFD32F2F)
 val Red400 = Color(0xFFEF5350)
 val Black = Color(0xFF000000)
+
+// BasicCodelab
+val Navy = Color(0xFF073042)
+val Blue = Color(0xFF4285F4)
+val LightBlue = Color(0xFFD7EFFE)
+val Chartreuse = Color(0xFFEFF7CF)
