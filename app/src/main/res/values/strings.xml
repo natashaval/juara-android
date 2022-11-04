@@ -274,4 +274,7 @@
     <string name="title_activity_basics">BasicsActivity</string>
     <string name="title_activity_basic_codelab">BasicCodelabActivity</string>
     <string name="title_activity_onboarding">OnboardingActivity</string>
+
+    <string name="show_less">Show less</string>
+    <string name="show_more">Show more</string>
 </resources>
