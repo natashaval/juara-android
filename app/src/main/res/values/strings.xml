@@ -273,4 +273,5 @@
     <string name="title_activity_unscramble">UnscrambleActivity</string>
     <string name="title_activity_basics">BasicsActivity</string>
     <string name="title_activity_basic_codelab">BasicCodelabActivity</string>
+    <string name="title_activity_onboarding">OnboardingActivity</string>
 </resources>
