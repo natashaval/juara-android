@@ -186,22 +186,22 @@ private val SootheLightColorPalette = lightColors(
   primary = gray900,
   secondary = rust600,
   background = taupe100,
-  surface = Color.White.copy(alpha = .85f),
+  surface = white850,
   onPrimary = Color.White,
   onSecondary = Color.White,
   onBackground = taupe800,
-  onSurface = gray900.copy(alpha = 0.8f)
+  onSurface = gray800
 )
 
 private val SootheDarkColorPalette = darkColors(
   primary = Color.White,
   secondary = rust300,
   background = gray900,
-  surface = Color.White.copy(alpha = 0.15f),
+  surface = white150,
   onPrimary = gray900,
   onSecondary = gray900,
   onBackground = taupe100,
-  onSurface = Color.White.copy(alpha = .8f)
+  onSurface = white800
 )
 
 @Composable
@@ -211,8 +211,8 @@ fun MySootheTheme(darkTheme: Boolean = isSystemInDarkTheme(), content: @Composab
   } else {
     SootheLightColorPalette
   }
-
-  MaterialTheme(
+  HappyBirthdayTheme(
+    darkTheme = darkTheme,
     colors = colors,
     typography = SootheTypography,
     shapes = SootheShapes,
