@@ -5,17 +5,28 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
-import androidx.compose.material.MaterialTheme
-import androidx.compose.material.Surface
-import androidx.compose.material.Text
+import androidx.compose.foundation.Image
+import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.lazy.LazyRow
+import androidx.compose.foundation.lazy.grid.GridCells
+import androidx.compose.foundation.lazy.grid.LazyHorizontalGrid
+import androidx.compose.foundation.lazy.grid.items
+import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.material.*
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Search
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
+import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.happybirthday.R
-import com.example.happybirthday.compose.view.ui.theme.HappyBirthdayTheme
 import com.example.happybirthday.compose.view.ui.theme.MySootheTheme
 
 class SootheActivity : ComponentActivity() {
@@ -30,23 +41,84 @@ class SootheActivity : ComponentActivity() {
 fun SearchBar(
   modifier: Modifier = Modifier
 ) {
-  // Implement composable here
+  TextField(
+    value = "",
+    onValueChange = {},
+    leadingIcon = {
+      Icon(
+        imageVector = Icons.Default.Search,
+        contentDescription = null
+      )
+    },
+    colors = TextFieldDefaults.textFieldColors(
+      backgroundColor = MaterialTheme.colors.surface
+    ),
+    placeholder = {
+      Text(stringResource(id = R.string.placeholder_search))
+    },
+    modifier = modifier
+      .fillMaxWidth()
+      .heightIn(min = 56.dp)
+  )
 }
 
 // Step: Align your body - Alignment
 @Composable
 fun AlignYourBodyElement(
+  @DrawableRes image: Int,
+  @StringRes text: Int,
   modifier: Modifier = Modifier
 ) {
-  // Implement composable here
+  Column(
+    modifier = modifier,
+    horizontalAlignment = Alignment.CenterHorizontally
+  ) {
+    Image(
+      painter = painterResource(id = image),
+      contentDescription = null,
+      contentScale = ContentScale.Crop,
+      modifier = Modifier
+        .size(88.dp)
+        .clip(CircleShape)
+    )
+    Text(
+      text = stringResource(id = text),
+      style = MaterialTheme.typography.h3,
+      modifier = Modifier.paddingFromBaseline(
+        top = 24.dp, bottom = 8.dp
+      )
+    )
+  }
 }
 
 // Step: Favorite collection card - Material Surface
 @Composable
 fun FavoriteCollectionCard(
+  @DrawableRes image: Int,
+  @StringRes text: Int,
   modifier: Modifier = Modifier
 ) {
-  // Implement composable here
+  Surface(
+    shape = MaterialTheme.shapes.small,
+    modifier = modifier
+  ) {
+    Row(
+      verticalAlignment = Alignment.CenterVertically,
+      modifier = Modifier.width(192.dp)
+    ) {
+      Image(
+        painter = painterResource(id = image),
+        contentScale = ContentScale.Crop,
+        contentDescription = null,
+        modifier = Modifier.size(56.dp)
+      )
+      Text(
+        text = stringResource(id = text),
+        style = MaterialTheme.typography.h3,
+        modifier = Modifier.padding(horizontal = 16.dp)
+      )
+    }
+  }
 }
 
 // Step: Align your body row - Arrangements
@@ -54,7 +126,15 @@ fun FavoriteCollectionCard(
 fun AlignYourBodyRow(
   modifier: Modifier = Modifier
 ) {
-  // Implement composable here
+  LazyRow(
+    modifier = modifier,
+    horizontalArrangement = Arrangement.spacedBy(8.dp),
+    contentPadding = PaddingValues(horizontal = 16.dp)
+  ) {
+    items(alignYourBodyData) { item ->
+      AlignYourBodyElement(image = item.drawable, text = item.text)
+    }
+  }
 }
 
 // Step: Favorite collections grid - LazyGrid
@@ -62,7 +142,21 @@ fun AlignYourBodyRow(
 fun FavoriteCollectionsGrid(
   modifier: Modifier = Modifier
 ) {
-  // Implement composable here
+  LazyHorizontalGrid(
+    rows = GridCells.Fixed(2),
+    contentPadding = PaddingValues(horizontal = 16.dp),
+    horizontalArrangement = Arrangement.spacedBy(8.dp),
+    verticalArrangement = Arrangement.spacedBy(8.dp),
+    modifier = modifier.height(120.dp)
+  ) {
+    items(favoriteCollectionsData) { item ->
+      FavoriteCollectionCard(
+        image = item.drawable,
+        text = item.text,
+        modifier = Modifier.height(56.dp)
+      )
+    }
+  }
 }
 
 // Step: Home section - Slot APIs
@@ -125,6 +219,8 @@ fun SearchBarPreview() {
 fun AlignYourBodyElementPreview() {
   MySootheTheme {
     AlignYourBodyElement(
+      image = R.drawable.ab1_inversions,
+      text = R.string.ab1_inversions,
       modifier = Modifier.padding(8.dp)
     )
   }
@@ -135,6 +231,8 @@ fun AlignYourBodyElementPreview() {
 fun FavoriteCollectionCardPreview() {
   MySootheTheme {
     FavoriteCollectionCard(
+      image = R.drawable.fc2_nature_meditations,
+      text = R.string.fc2_nature_meditations,
       modifier = Modifier.padding(8.dp)
     )
   }

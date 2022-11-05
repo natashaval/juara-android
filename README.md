@@ -35,7 +35,7 @@ Collect 12 badges [for beginners](https://developer.android.com/courses/android-
 
 ## Jetpack Compose for Android Developers
 **<img src="https://developer.android.com/courses/jetpack-compose/images/course-logo.svg" width="50"/>[Jetpack Compose for Android Developers](https://developer.android.com/courses/jetpack-compose/course)**
-1. BasicsActivity
+1. BasicsActivity, BasicCodelabActivity, OnboardingActivity, SootheActivity
    * <img src="https://developers.google.com/profile/badges/playlists/android/jetpack-compose-for-android-developers-1/badge.svg" width="50" />[Compose essentials](https://developer.android.com/courses/pathways/jetpack-compose-for-android-developers-1)
 
 
