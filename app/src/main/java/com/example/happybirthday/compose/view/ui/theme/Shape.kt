@@ -15,3 +15,8 @@ val WoofShapes = Shapes(
   medium = RoundedCornerShape(16.dp),
   large = RoundedCornerShape(0.dp)
 )
+
+val SootheShapes = Shapes(
+  small = RoundedCornerShape(4.dp),
+  medium = RoundedCornerShape(16.dp)
+)

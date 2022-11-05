@@ -11,27 +11,32 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HappyBirthday">
         <activity
-            android:name=".OnboardingActivity"
+            android:name=".compose.view.SootheActivity"
+            android:exported="false"
+            android:label="@string/soothe_app_name"
+            android:theme="@style/Theme.HappyBirthday" />
+        <activity
+            android:name=".compose.view.OnboardingActivity"
             android:exported="false"
             android:label="@string/title_activity_onboarding"
             android:theme="@style/Theme.HappyBirthday" />
         <activity
-            android:name=".BasicCodelabActivity"
+            android:name=".compose.view.BasicCodelabActivity"
             android:exported="false"
             android:label="@string/title_activity_basic_codelab"
             android:theme="@style/Theme.HappyBirthday" />
         <activity
-            android:name=".BasicsActivity"
+            android:name=".compose.view.BasicsActivity"
             android:exported="false"
             android:label="@string/title_activity_basics"
             android:theme="@style/Theme.HappyBirthday" />
         <activity
-            android:name=".UnscrambleActivity"
+            android:name=".compose.view.UnscrambleActivity"
             android:exported="false"
             android:label="@string/title_activity_unscramble"
             android:theme="@style/Theme.HappyBirthday" />
         <activity
-            android:name=".DessertActivity"
+            android:name=".compose.view.DessertActivity"
             android:exported="false"
             android:label="@string/title_activity_dessert"
             android:theme="@style/Theme.HappyBirthday" />

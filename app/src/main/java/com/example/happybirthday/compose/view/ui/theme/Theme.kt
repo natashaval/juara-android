@@ -180,3 +180,42 @@ fun BasicsCodelabTheme(
     content = content
   )
 }
+
+// MySoothe
+private val SootheLightColorPalette = lightColors(
+  primary = gray900,
+  secondary = rust600,
+  background = taupe100,
+  surface = Color.White.copy(alpha = .85f),
+  onPrimary = Color.White,
+  onSecondary = Color.White,
+  onBackground = taupe800,
+  onSurface = gray900.copy(alpha = 0.8f)
+)
+
+private val SootheDarkColorPalette = darkColors(
+  primary = Color.White,
+  secondary = rust300,
+  background = gray900,
+  surface = Color.White.copy(alpha = 0.15f),
+  onPrimary = gray900,
+  onSecondary = gray900,
+  onBackground = taupe100,
+  onSurface = Color.White.copy(alpha = .8f)
+)
+
+@Composable
+fun MySootheTheme(darkTheme: Boolean = isSystemInDarkTheme(), content: @Composable() () -> Unit) {
+  val colors = if (darkTheme) {
+    SootheDarkColorPalette
+  } else {
+    SootheLightColorPalette
+  }
+
+  MaterialTheme(
+    colors = colors,
+    typography = SootheTypography,
+    shapes = SootheShapes,
+    content = content
+  )
+}
