@@ -11,7 +11,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HappyBirthday">
         <activity
-            android:name=".WellnessActivity"
+            android:name=".compose.view.JetnewsActivity"
+            android:exported="false"
+            android:label="@string/jetnews_app_title"
+            android:theme="@style/Theme.HappyBirthday" />
+        <activity
+            android:name=".compose.view.WellnessActivity"
             android:exported="false"
             android:label="@string/title_activity_wellness"
             android:theme="@style/Theme.HappyBirthday" />
