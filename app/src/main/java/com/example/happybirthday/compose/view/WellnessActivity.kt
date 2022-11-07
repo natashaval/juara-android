@@ -7,14 +7,19 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.items
 import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Close
 import androidx.compose.runtime.*
+import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import com.example.happybirthday.compose.data.WellnessTasksSource
+import com.example.happybirthday.compose.model.WellnessTask
 import com.example.happybirthday.compose.view.ui.theme.HappyBirthdayTheme
 
 class WellnessActivity : ComponentActivity() {
@@ -31,32 +36,32 @@ class WellnessActivity : ComponentActivity() {
 }
 
 @Composable
-fun WaterCounter(modifier: Modifier = Modifier) {
+fun StatelessCounter(
+  count: Int,
+  onIncrement: () -> Unit,
+  modifier: Modifier = Modifier
+) {
   Column(modifier = modifier.padding(16.dp)) {
-    var count by remember { mutableStateOf(0) }
     if (count > 0) {
-      var showTask by remember { mutableStateOf(true) }
-      if (showTask) {
-        WellnessTaskItem(
-          taskName = "Have you taken your 15 minute walk today?",
-          onClose = { showTask = false })
-      }
       Text(text = "You've had $count glasses.")
     }
-    Row(modifier = Modifier.padding(top = 8.dp)) {
-      Button(onClick = { count++ }, enabled = count < 10) {
-        Text("Add one")
-      }
-      Button(onClick = { count = 0}, modifier = Modifier.padding(start = 8.dp)) {
-        Text("Clear water count")
-      }
+    Button(onClick = onIncrement, modifier = Modifier.padding(top = 8.dp), enabled = count < 10) {
+      Text("Add one")
     }
   }
 }
 
 @Composable
+fun StatefulCounter(modifier: Modifier = Modifier) {
+  var count by rememberSaveable { mutableStateOf(0) }
+  StatelessCounter(count = count, onIncrement = { count++ }, modifier)
+}
+
+@Composable
 fun WellnessTaskItem(
   taskName: String,
+  checked: Boolean,
+  onCheckedChange: (Boolean) -> Unit,
   onClose: () -> Unit,
   modifier: Modifier = Modifier
 ) {
@@ -70,6 +75,10 @@ fun WellnessTaskItem(
         .padding(start = 16.dp),
       text = taskName
     )
+    Checkbox(
+      checked = checked,
+      onCheckedChange = onCheckedChange
+    )
     IconButton(onClick = onClose) {
       Icon(
         imageVector = Icons.Filled.Close,
@@ -80,8 +89,38 @@ fun WellnessTaskItem(
 }
 
 @Composable
+fun WellnessTaskItem(taskName: String, modifier: Modifier = Modifier) {
+  var checkedState by rememberSaveable { mutableStateOf(false) }
+  WellnessTaskItem(
+    taskName = taskName,
+    checked = checkedState,
+    onCheckedChange = { newValue -> checkedState = newValue },
+    onClose = {},
+    modifier = modifier
+  )
+}
+
+
+@Composable
+fun WellnessTasksList(
+  modifier: Modifier = Modifier,
+  list: List<WellnessTask> = remember { WellnessTasksSource().getWellnessTasks() }
+) {
+  LazyColumn(
+    modifier = modifier
+  ) {
+    items(list) { task ->
+      WellnessTaskItem(taskName = task.label)
+    }
+  }
+}
+
+@Composable
 fun WellnessScreen(modifier: Modifier = Modifier) {
-  WaterCounter(modifier = modifier)
+  Column(modifier = modifier) {
+    StatefulCounter()
+    WellnessTasksList()
+  }
 }
 
 @Preview(showBackground = true)
