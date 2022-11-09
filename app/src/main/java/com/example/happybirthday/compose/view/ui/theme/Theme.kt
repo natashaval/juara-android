@@ -219,3 +219,36 @@ fun MySootheTheme(darkTheme: Boolean = isSystemInDarkTheme(), content: @Composab
     content = content
   )
 }
+
+// Jetnews
+private val JetnewsLightColors = lightColors(
+  primary = JetnewsRed700,
+  primaryVariant = JetnewsRed900,
+  onPrimary = Color.White,
+  secondary = JetnewsRed700,
+  secondaryVariant = JetnewsRed900,
+  onSecondary = Color.White,
+  error = JetnewsRed800
+)
+
+private val JetnewsDarkColors = darkColors(
+  primary = JetnewsRed300,
+  primaryVariant = JetnewsRed700,
+  onPrimary = Color.Black,
+  secondary = JetnewsRed300,
+  onSecondary = Color.Black,
+  error = JetnewsRed200
+)
+
+@Composable
+fun JetnewsTheme(
+  darkTheme: Boolean = isSystemInDarkTheme(),
+  content: @Composable () -> Unit
+) {
+  MaterialTheme(
+    colors = if (darkTheme) JetnewsDarkColors else JetnewsLightColors,
+    typography = JetnewsTypography,
+    shapes = JetnewsShapes,
+    content = content
+  )
+}

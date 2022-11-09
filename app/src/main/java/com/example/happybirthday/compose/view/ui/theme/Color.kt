@@ -46,3 +46,10 @@ val white150 = Color.White.copy(alpha = 0.15f)
 val white800 = Color.White.copy(alpha = 0.8f)
 val white850 = Color.White.copy(alpha = 0.85f)
 val gray800 = gray900.copy(alpha = 0.8f)
+
+// Jetnews
+val JetnewsRed200 = Color(0xfff297a2)
+val JetnewsRed300 = Color(0xffea6d7e)
+val JetnewsRed700 = Color(0xffdd0d3c)
+val JetnewsRed800 = Color(0xffd00036)
+val JetnewsRed900 = Color(0xffc20029)
