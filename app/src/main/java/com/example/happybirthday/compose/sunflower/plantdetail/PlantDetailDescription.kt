@@ -1,5 +1,6 @@
 package com.example.happybirthday.compose.sunflower.plantdetail
 
+import android.content.res.Configuration
 import android.text.method.LinkMovementMethod
 import android.widget.TextView
 import androidx.compose.foundation.layout.Column
@@ -26,6 +27,7 @@ import androidx.core.text.HtmlCompat
 import com.example.happybirthday.R
 import com.example.happybirthday.compose.sunflower.data.Plant
 import com.example.happybirthday.compose.sunflower.viewmodels.PlantDetailViewModel
+import com.google.android.material.composethemeadapter.MdcTheme
 
 /**
  * Created by natasha.santoso on 10/11/22.
@@ -116,7 +118,7 @@ private fun PlantDescription(description: String) {
 @Preview
 @Composable
 private fun PlantNamePreview() {
-  MaterialTheme {
+  MdcTheme {
     PlantName(name = "Apple")
   }
 }
@@ -124,7 +126,7 @@ private fun PlantNamePreview() {
 @Preview
 @Composable
 private fun PlantWateringPreview() {
-  MaterialTheme {
+  MdcTheme {
     PlantWatering(wateringInterval = 7)
   }
 }
@@ -132,7 +134,7 @@ private fun PlantWateringPreview() {
 @Preview
 @Composable
 private fun PlantDescriptionPreview() {
-  MaterialTheme {
+  MdcTheme {
     PlantDescription(description = "HTML<br><br>description")
   }
 }
@@ -141,7 +143,16 @@ private fun PlantDescriptionPreview() {
 @Composable
 private fun PlantDetailContentPreview() {
   val plant = Plant("id", "Apple", "HTML<br><br>description", 3, 30, "")
-  MaterialTheme {
+  MdcTheme {
+    PlantDetailContent(plant = plant)
+  }
+}
+
+@Preview(uiMode = Configuration.UI_MODE_NIGHT_YES)
+@Composable
+private fun PlantDetailContentDarkPreview() {
+  val plant = Plant("id", "Apple", "HTML<br><br>description", 3, 30, "")
+  MdcTheme {
     PlantDetailContent(plant = plant)
   }
 }
