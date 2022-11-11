@@ -39,7 +39,7 @@ Collect 12 badges [for beginners](https://developer.android.com/courses/android-
    * Write your first Compose app -> BasicsActivity, BasicCodelabActivity, OnboardingActivity
    * Basic layouts in Compose -> SootheActivity
    * State in Compose -> WellnessActivity
-   * 
+   * Migrating to Jetpack Compose -> sunflower.GardenActivity
 
 
 ## Juara Android Season 1: Android Development
