@@ -53,3 +53,9 @@ val JetnewsRed300 = Color(0xffea6d7e)
 val JetnewsRed700 = Color(0xffdd0d3c)
 val JetnewsRed800 = Color(0xffd00036)
 val JetnewsRed900 = Color(0xffc20029)
+
+// Animation
+val Purple100 = Color(0xFFE1BEE7)
+val Green300 = Color(0xFF81C784)
+val Green800 = Color(0xFF2E7D32)
+val Amber600 = Color(0xFFFFB300)

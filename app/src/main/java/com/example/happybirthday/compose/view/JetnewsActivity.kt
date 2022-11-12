@@ -48,7 +48,7 @@ class JetnewsActivity : ComponentActivity() {
 }
 
 @Composable
-fun Home() {
+private fun Home() {
   val featured = remember { PostRepo.getFeaturedPost() }
   val posts = remember { PostRepo.getPosts() }
   JetnewsTheme {

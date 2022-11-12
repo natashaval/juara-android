@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-
     <application
         android:name=".MyApplication"
         android:allowBackup="true"
@@ -12,6 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_lemonade_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.HappyBirthday">
+        <activity
+            android:name=".AnimationActivity"
+            android:exported="false"
+            android:label="@string/title_activity_animation"
+            android:theme="@style/Theme.HappyBirthday">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
         <activity
             android:name=".compose.sunflower.GardenActivity"
             android:exported="true"
@@ -220,4 +226,8 @@
             android:name=".BirthdayActivity"
             android:exported="false" />
     </application>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
 </manifest>

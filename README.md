@@ -40,7 +40,8 @@ Collect 12 badges [for beginners](https://developer.android.com/courses/android-
    * Basic layouts in Compose -> SootheActivity
    * State in Compose -> WellnessActivity
    * Migrating to Jetpack Compose -> sunflower.GardenActivity
-
+2. <img src="https://developers.google.com/profile/badges/playlists/android/jetpack-compose-for-android-developers-2/badge.svg" width="50" />[Layouts, theming, and animation](https://developer.android.com/courses/pathways/jetpack-compose-for-android-developers-2)
+   * Animating Elements in Jetpack Compose -> AnimationActivity 
 
 ## Juara Android Season 1: Android Development
 Juara-Android Indonesia 2022 Season 1 [link](https://gdg.community.dev/events/details/google-gdg-jakarta-presents-info-session-juaraandroid-season-1/)  
