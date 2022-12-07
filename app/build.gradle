@@ -70,7 +70,7 @@ dependencies {
     implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.5.1'
     implementation 'androidx.activity:activity-compose:1.6.0'
     implementation 'androidx.camera:camera-core:1.1.0'
-    implementation 'androidx.compose.material3:material3:1.0.0-alpha01'
+    implementation 'androidx.compose.material3:material3:1.1.0-alpha02'
     implementation 'com.google.android.material:compose-theme-adapter:1.1.21'
     implementation "com.google.code.gson:gson:$rootProject.gsonVersion"
     testImplementation 'junit:junit:4.13.2'
@@ -121,4 +121,6 @@ dependencies {
     // compose testing
     androidTestImplementation "androidx.work:work-testing:2.7.1"
     androidTestImplementation "com.google.truth:truth:1.1.2"
+    // foldable
+    implementation "androidx.window:window:1.0.0"
 }

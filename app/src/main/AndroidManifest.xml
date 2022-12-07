@@ -29,6 +29,11 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".compose.reply.ui.MainActivity"
+            android:exported="false"
+            android:label="@string/reply_app_name"
+            android:theme="@style/Theme.HappyBirthday" />
+        <activity
             android:name=".compose.view.JetnewsActivity"
             android:exported="false"
             android:label="@string/jetnews_app_title"
